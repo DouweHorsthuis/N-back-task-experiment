@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/DouweHorsthuis/N-back-task-experiment/">
-    <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpeg" alt="Logo" width="160" height="160">
   </a> 
 
 <h3 align="center">N-Back Task</h3>
@@ -123,7 +123,7 @@ Project Link: [https://github.com/DouweHorsthuis/N-back-task-experiment/](https:
 
 
 
-
+-->
 
 [contributors-shield]: https://img.shields.io/github/contributors/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
 [contributors-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/graphs/contributors
