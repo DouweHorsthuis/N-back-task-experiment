@@ -1,4 +1,4 @@
-scenario = "0 back Visual";
+scenario = "1 back Visual - verbal";
 
 no_logfile = false;
 scenario_type = trials;
@@ -10,7 +10,7 @@ active_buttons = 2;
 button_codes = 1,2;
 write_codes = false; 
 pulse_width = 10;
-pcl_file = "0 back Visual.pcl";
+pcl_file = "1 back Visual - verbal.pcl";
 begin;
 
 text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                                 Non-Target"; font_size = 30; font_color = 200,200,200;  } t_nt_text;
@@ -28,7 +28,7 @@ trial{ #this is the first screen to prepare people
 }start_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 500;        	
+  trial_duration = 1000;        	
 	stimulus_event {
 		picture {	
 			text {	
@@ -39,12 +39,11 @@ trial{ #this is the target trial
 			x = 256; y = -256;
 		}t_pic; 
 		port_code = 10;
-		#target_button = 1;  
 	}t_event;
 }t_trial;
 
 trial{ #this is the non-target trial 
-  trial_duration = 500;        	
+  trial_duration = 1000;        	
 	stimulus_event {
 		picture {	
 			text {	
@@ -55,12 +54,11 @@ trial{ #this is the non-target trial
 			x = 256; y = -256;
 		}nt_pic; 
 		port_code = 11; 
-		#target_button = 2; 
 	}nt_event;
 }nt_trial;
 
 trial { 
-    trial_duration = 500;
+    trial_duration = 500; 
      picture t_nt_pic;  
     code = "target";
     target_button = 1; #so that a hit shows up if you press left button
