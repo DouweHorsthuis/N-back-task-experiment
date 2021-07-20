@@ -2,7 +2,7 @@ scenario = "N back Visual - non-verbal";
 
 no_logfile = false;
 scenario_type = trials;
-
+response_matching = simple_matching;
 default_background_color = 128, 128, 128;
 default_text_color = 255, 0, 255;
 default_font_size = 40;  
@@ -12,6 +12,17 @@ write_codes = false;
 pulse_width = 10;
 pcl_file = "N back Visual - non-verbal.pcl";
 begin;
+#loading stimuli
+bitmap { filename = "1.png"; preload = true; } pic_cross;
+bitmap { filename = "2.png"; preload = true; } pic_2;
+bitmap { filename = "3.png"; preload = true; } pic_3;
+bitmap { filename = "4.png"; preload = true; } pic_4;
+bitmap { filename = "5.png"; preload = true; } pic_5;
+bitmap { filename = "6.png"; preload = true; } pic_6;
+bitmap { filename = "7.png"; preload = true; } pic_7;
+bitmap { filename = "8.png"; preload = true; } pic_8;
+bitmap { filename = "9.png"; preload = true; } pic_9;
+
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
@@ -24,17 +35,12 @@ trial{ #this is the first screen to prepare people
 	port_code = 201; 
 }start_trial;
 
+
 trial{ #this is the target trial 
   trial_duration = 500;        	
 	stimulus_event {
-		picture {	
-			text {	
-				caption = "!";
-				text_align = align_center;
-				font_color = 0,0,0;
-			}t_txt;
-			x = 256; y = -256;
-		}t_pic; 
+		picture {
+			} target;
 		port_code = 10;
 		target_button = 1;  
 	}t_event;
@@ -43,14 +49,8 @@ trial{ #this is the target trial
 trial{ #this is the non-target trial 
   trial_duration = 500;        	
 	stimulus_event {
-		picture {	
-			text {	
-				caption = "!";
-				text_align = align_center;
-				font_color = 0,0,0;
-			}nt_txt;
-			x = 256; y = -256;
-		}nt_pic; 
+		picture {
+			} nontarget; 
 		port_code = 11; 
 		target_button = 2; 
 	}nt_event;

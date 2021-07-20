@@ -1,5 +1,5 @@
 <ver>22</ver>
-<efn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N back Visual - non-verbal.exp</efn>
+<efn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal.exp</efn>
 <author>Douwe Horsthuis</author>
 <con>
 <pause>P</pause>
@@ -41,20 +41,20 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd></dsd>
+<dsd>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Stimuli</dsd>
 <dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\0 back Visual - non-verbal.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\0 back Visual - non-verbal.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\1 back Visual - non-verbal.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\1 back Visual - non-verbal.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\2 back Visual - non-verbal.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\2 back Visual - non-verbal.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N back Visual - non-verbal.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N back Visual - non-verbal.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N-back Visual Instructions - non-verbal.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N-back Visual Instructions - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N-back Visual Instructions - non-verbal.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N-back Visual Instructions - non-verbal.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>1.0</exp_version>
@@ -173,7 +173,7 @@
 </lslset>
 <maxpv></maxpv>
 <minpv></minpv>
-<nam>N Back visual Verbal</nam>
+<nam>N Back visual Non-Verbal</nam>
 <one_processor>2</one_processor>
 <oports>
 <p>
@@ -498,111 +498,86 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\0 back Visual - non-verbal.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal.sce</sfn>
 </sce>
 <sce>
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\1 back Visual - non-verbal.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal.sce</sfn>
 </sce>
 <sce>
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\2 back Visual - non-verbal.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal.sce</sfn>
 </sce>
 <sce>
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N back Visual - non-verbal.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal.sce</sfn>
 </sce>
 <sce>
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\N-back Visual Instructions - non-verbal.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N-back Visual Instructions - non-verbal.sce</sfn>
 </sce>
 <sct>
 <capture_device>
