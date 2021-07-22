@@ -1,7 +1,4 @@
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -15,99 +12,61 @@
 
 <h3 align="center">N-Back Task</h3>
 
-<h4 align="center">This is still a work in progress. N-Back task experiment for Presentation® NeuroBehavioral Systems, This task is created for the Cystinosis experiment battery (2021)  
-It will contain 3 versions of the N-back task  
-1 Visual verbal  
-1 Visual Non-verbal  
-1 Auditory verbal  
+<h4 align="center">This is still a work in progress. N-Back task experiment for Presentation® NeuroBehavioral Systems, This tasks are being created for the Cystinosis experiment battery (2021). There will be 2 Visual versions (1 verbal and 1 non-verbal) and 1 auditory version.  
 </h4>
 
-<!--
+
 **Table of Contents**
   
 1. [About the project](#about-the-project)
-    - [Built With](#built-with)
 2. [Getting started](#getting-started)
-    - [Prerequisites](#prerequisites)  
-    - [Installation](#installation)  
-3. [Roadmap](#roadmap)
-3. [Contributing](#contributing)
-3. [License](#license)
-3. [Contact](#contact)
+    - [Presentation settings](#presentation-settings)  
+3. [Contact](#contact)    
 3. [Acknowledgement](#acknowledgement)
-3. [Usage](#usage)
+
 
 
 
 ## About The Project
+This Project will have 3 different N-back tasks each designed to touch a different aspect of the working memory. 2 of them are Visual and 1 is auditory. 
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+1. Visual-verbal
+    - For this experiment, participants will see a letter and have to do the N back task based on this.  
+      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
+      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
+      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same  
 
-
-
-
-### Built With
-
-* []()
-* []()
-* []()
-
+2. Visual-non-verbal
+    - For this experiment, participant will see a square and have to do the N-back task based on the location
+      - 0-back = press left CTRL if the square is in the top right corner, press right CTRL for any other location  
+      - 1-back = press left CTRL if the previous square was in the same place current one, press right CTRL when it was not the same  
+      - 2-back = press left CTRL if the location of the square, 2 trials ago, is the same as the current one, press right CTRL when it is not the same.  
+      
+3. Auditory 
+    - This Task needs to still be created fully
 
 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the N-back-task-experiment
-   ```sh
-   git clone https://github.com/DouweHorsthuis/N-back-task-experiment/.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+There is only 1 sequence file if you download this repo. Use the matlab script to create more and change the presentation code (line 8 and 9 in each of the PCL files)
+``` 
+#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+```
+*Need to be*
+``` 
+string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+```
+Like this it will choose randomly between the 50 sequence files. These files are all semi random with the rule that there are always at least 2 no-target trails between targets. It also makes sure that 80% of the trials are non-target trials
 
 
+### Presentation settings
 
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Add here all the presentation settings. We haven't tested it so no info as of yet. 
 
 
-
-## Roadmap
-
-See the [open issues](https://github.com/DouweHorsthuis/N-back-task-experiment/issues) for a list of proposed features (and known issues).
-
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
@@ -122,22 +81,12 @@ Project Link: [https://github.com/DouweHorsthuis/N-back-task-experiment/](https:
 
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Ana Francisco](https://github.com/anafrancisco) - The Research Assistant Professor that conceptualized the experiment
 
 
-
--->
 
 [contributors-shield]: https://img.shields.io/github/contributors/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
 [contributors-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
-[forks-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/network/members
-[stars-shield]: https://img.shields.io/github/stars/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
-[stars-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
-[issues-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/issues
 [license-shield]: https://img.shields.io/github/license/DouweHorsthuis/N-back-task-experiment.svg?style=for-the-badge
 [license-url]: https://github.com/DouweHorsthuis/N-back-task-experiment/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
