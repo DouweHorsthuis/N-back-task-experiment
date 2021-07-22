@@ -35,6 +35,14 @@ trial{ #this is the first screen to prepare people
 	port_code = 201; 
 }start_trial;
 
+trial{ #this is the first screen to prepare people 
+  trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1;   # left-ctrl button
+   picture {
+		text {font_size=25; font="Arial"; caption ="Please press the LEFT ctrl if the square shows up at the same place as the 2 trials before \n \n Please press the RIGHT ctrl after you see the square anywhere else \n \n \n \n press the left ctrl to continue"; font_color = 200,200,200;};
+      x=0;y=0;};
+}instruction_trial;
 
 trial{ #this is the target trial 
   trial_duration = 500;        	
@@ -55,6 +63,15 @@ trial{ #this is the non-target trial
 		target_button = 2; 
 	}nt_event;
 }nt_trial;
+
+trial{ #this is the isi trial 
+  trial_duration = 250;        	
+	stimulus_event {
+		picture {bitmap pic_cross;
+		x=0; y=0;
+			}fix_cross ; 
+	}isi_event;
+}isi_trial;
 
 trial {
 trial_duration = 2000;

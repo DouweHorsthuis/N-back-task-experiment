@@ -34,7 +34,7 @@ array <string> my_letters[ntrls]; #will contain all the letters
 array <bitmap> my_locations[ntrls]; #will contain all the letters
 array <int> port_code_location[ntrls]; #used for adding the correct port code to the location
 
-
+instruction_trial.present(); # to make clear the difference between the 0-1-2 back tasks
 loop #so that the bdf starts saving data
 int start = 1;
 until
@@ -92,5 +92,6 @@ begin
 		t_event.set_event_code(string(port_code_location[i]));
 		t_trial.present();
 	end;
+	isi_trial.present();
 	i=i+1;
 end;
