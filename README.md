@@ -33,23 +33,14 @@ This Project will have 3 different N-back tasks each designed to touch a differe
 
 1. Visual-verbal
     - For this experiment, participants will see a letter and have to do the N back task based on this.  
-      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
-      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
-      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same  
 
 2. Visual-non-verbal
     - For this experiment, participant will see a square and have to do the N-back task based on the location
-      - 0-back = press left CTRL if the square is in the top right corner, press right CTRL for any other location  
-      - 1-back = press left CTRL if the previous square was in the same place current one, press right CTRL when it was not the same  
-      - 2-back = press left CTRL if the location of the square, 2 trials ago, is the same as the current one, press right CTRL when it is not the same.  
-      
+
 3. Auditory 
-    - For this experiment, participant will hear letter being said out loud
-      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
-      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
-      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same. 
+    - For this experiment, participant will hear letter being said out loud and have to do the N back task based on this.
 
-
+# Maybe add here some extra info about general N-back tasks
 
 ## Getting Started
 
