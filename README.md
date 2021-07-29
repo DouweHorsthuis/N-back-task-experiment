@@ -20,7 +20,8 @@
   
 1. [About the project](#about-the-project)
 2. [Getting started](#getting-started)
-    - [Presentation settings](#presentation-settings)  
+    - [Presentation settings](#presentation-settings)
+3. [Info about the paradigm](#info-about-the-paradigm)
 3. [Contact](#contact)    
 3. [Acknowledgement](#acknowledgement)
 
@@ -43,7 +44,10 @@ This Project will have 3 different N-back tasks each designed to touch a differe
       - 2-back = press left CTRL if the location of the square, 2 trials ago, is the same as the current one, press right CTRL when it is not the same.  
       
 3. Auditory 
-    - This Task needs to still be created fully
+    - For this experiment, participant will hear letter being said out loud
+      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
+      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
+      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same. 
 
 
 
@@ -61,13 +65,51 @@ string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_
 ```
 Like this it will choose randomly between the 50 sequence files. These files are all semi random with the rule that there are always at least 2 no-target trails between targets. It also makes sure that 80% of the trials are non-target trials
 
+## this needs to be upgraded to at least 3 non-targets, it gets more diffecult for the 2-back tasks
+
 
 ### Presentation settings
 
-Add here all the presentation settings. We haven't tested it so no info as of yet. 
+Add here all the presentation settings. We haven't tested it so no info as of yet. There should be print screens of the settings 
 
 
+## Info about the paradigm  
 
+### Stimuli
+The stimuli are all created by ourselves. 
+
+### Logfiles  
+Logfiles with experiment reaction times and other information automatically should be placed in the logfile folder. In these logfiles you will find the behavioral information of each time the experiment is ran.  
+
+### Sequences  
+In the Presentation Files folder you'll find the experiment and the sequences that are semi-randomized, so we are sure that there are no 2 target trials in a row and how many trials there are. These sequences are made so that there are always non-target trials before a target trial.  
+
+### Instructions  
+1. Visual-verbal
+    - For this experiment, participants will see a letter and have to do the N back task based on this.  
+      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
+      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
+      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same  
+
+2. Visual-non-verbal
+    - For this experiment, participant will see a square and have to do the N-back task based on the location
+      - 0-back = press left CTRL if the square is in the top right corner, press right CTRL for any other location  
+      - 1-back = press left CTRL if the previous square was in the same place current one, press right CTRL when it was not the same  
+      - 2-back = press left CTRL if the location of the square, 2 trials ago, is the same as the current one, press right CTRL when it is not the same.  
+      
+3. Auditory 
+    - For this experiment, participant will hear letter being said out loud
+      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
+      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
+      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same. 
+      
+## update these in the experiment files to match
+
+### Trigger codes
+Explain trigger codes
+
+### Timing
+Explain timing of the trials 
 
 
 ## Contact
