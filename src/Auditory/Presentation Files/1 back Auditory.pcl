@@ -1,0 +1,113 @@
+
+
+int ntrls = 100; # number of trials (needs to be devidable by 5) 
+string direc = "C://Users//dohorsth//Documents//GitHub//N-back-task-experiment//src//Auditory//Presentation Files//";
+array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
+input_file order_in = new input_file;# Read-in the trial order
+#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+order_in.open(file_path);
+order_in.set_delimiter( '\n' ); # for get_line()		
+loop
+int ii = 1; 
+until
+ii > ntrls
+begin
+	t_or_nt[ii] = order_in.get_int();
+	ii = ii+1;
+end;
+
+order_in.close();
+
+array <sound> letter_sound[26];
+letter_sound[1] = a;
+letter_sound[2] = b;
+letter_sound[3] = c;
+letter_sound[4] = d;
+letter_sound[5] = e;
+letter_sound[6] = f;
+letter_sound[7] = g;
+letter_sound[8] = h;
+letter_sound[9] = i;
+letter_sound[10] = j;
+letter_sound[11] = k;
+letter_sound[12] = l;
+letter_sound[13] = m;
+letter_sound[14] = n;
+letter_sound[15] = o;
+letter_sound[16] = p;
+letter_sound[17] = q;
+letter_sound[18] = r;
+letter_sound[19] = s;
+letter_sound[20] = t;
+letter_sound[21] = u;
+letter_sound[22] = v;
+letter_sound[23] = w;
+letter_sound[24] = z; #switched this because the x is the target for the 0-back
+letter_sound[25] = y;
+letter_sound[26] = x;
+
+
+array <sound> my_sounds[ntrls]; #will contain all the letters
+array <int> port_code_sounds[ntrls]; #used for adding the correct port code to the letter
+
+instruction_trial.present();
+loop #so that the bdf starts saving data
+int start = 1;
+until
+start>2
+begin
+	start_trial.present();
+	start = start +1;
+end;
+
+loop #this loop will assign all the info to each trial
+int ii = 5; int letter; 
+until 
+ii > ntrls
+begin
+	if t_or_nt[ii]== 1 || ii< 10 then #non-target + not first 5 trials
+		#port_code_sounds[ii]=11; #0-back
+		port_code_sounds[ii]=21; #1-back
+		#port_code_sounds[ii]=31; #2-back
+		letter = random(1,26); 
+		if letter_sound[letter]==my_sounds[ii-1] || letter_sound[letter]==my_sounds[ii-2] || letter_sound[letter]==my_sounds[ii-3] || letter_sound[letter]==my_sounds[ii-4] then
+			loop #if it's the same
+			letter = random(1,26);;#choose new letter until
+			until letter_sound[letter]!=my_sounds[ii-1] && letter_sound[letter]!=my_sounds[ii-2] && letter_sound[letter]!=my_sounds[ii-3] && letter_sound[letter]!=my_sounds[ii-4] #letter is not the same as previous letters
+			begin
+				letter = random(1,26);
+			end;
+		end;
+		my_sounds[ii]=letter_sound[letter];
+	elseif t_or_nt[ii]== 2 then #target
+		#port_code_sounds[ii]=12;#0-back 
+		#my_sounds[ii]=letter_sound[26]; #0-back, so it's always X which is number 26
+		port_code_sounds[ii]=22;#1-back 
+		my_sounds[ii] = my_sounds[ii-1];#1-back
+		#port_code_sounds[ii]=32;#2-back 
+		#my_sounds[ii] = my_sounds[i-2];#2-back
+	end;
+	ii=ii+1;
+end;
+
+int ii=5;
+loop	 
+until
+	ii > ntrls 
+begin	
+	fix_trial.present();
+	term.print(t_or_nt[ii]);
+	if t_or_nt[ii] == 1 then #non-target
+		nt_event.set_stimulus(my_sounds[ii]); #adding correct stimuli picture
+		nt_event.set_port_code(port_code_sounds[ii]); #adding correct portcode
+		nt_event.set_event_code(string(port_code_sounds[ii])); #creating a string and using it as event code
+		nt_trial.present(); # presenting 
+   elseif t_or_nt[ii] == 2 then #target
+		t_event.set_stimulus(my_sounds[ii]);
+		t_event.set_port_code(port_code_sounds[ii]);
+		t_event.set_event_code(string(port_code_sounds[ii]));
+		t_trial.present();
+	end;
+	ii=ii+1;
+end;

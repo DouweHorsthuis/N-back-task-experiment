@@ -1,0 +1,7 @@
+Scenario - N back Auditory
+Logfile written - 07/29/2021 11:08:49
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+	1	Picture	201 start recording	10166	0	1	55179	1	0	next	other	0
+	1	Quit		59861	49694	NA
