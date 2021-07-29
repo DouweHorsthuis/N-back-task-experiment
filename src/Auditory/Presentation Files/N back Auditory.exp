@@ -47,6 +47,12 @@
 <efs>
 <filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\N back Auditory.sce</filename>
 <filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\N back Auditory.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\0 back Auditory.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\0 back Auditory.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\1 back Auditory.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\1 back Auditory.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\2 back Auditory.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\2 back Auditory.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>1.1</exp_version>
@@ -86,6 +92,12 @@
 <asn>
 <sid>-2</sid>
 </asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
 </ssa>
 </man>
 </exparam>
@@ -99,6 +111,8 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
+<sce>1</sce>
+<sce>1</sce>
 <sce>1</sce>
 </do_upload>
 <host></host>
@@ -480,7 +494,41 @@
 <offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\N back Auditory.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\0 back Auditory.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
+</idv>
+<overrides></overrides>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\1 back Auditory.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
+<idn>Keyboard</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
+</idv>
+<overrides></overrides>
+<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Auditory\Presentation Files\2 back Auditory.sce</sfn>
 </sce>
 <sct>
 <capture_device>
