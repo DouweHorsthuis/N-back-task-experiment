@@ -52,7 +52,7 @@ letter_array[26] = "X";#switched these because of 0-back task
 array <string> my_letters[ntrls]; #will contain all the letters
 array <int> port_code_letters[ntrls]; #used for adding the correct port code to the letter
 
-
+instruction_trial.present();
 loop #so that the bdf starts saving data
 int start = 1;
 until

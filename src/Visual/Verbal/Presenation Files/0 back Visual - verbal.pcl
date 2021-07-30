@@ -22,14 +22,14 @@ order_in.close();
 
 
 array <string> letter_array[26];
-letter_array[1]  = "A";
-letter_array[2]  = "B";
-letter_array[3]  = "C";
-letter_array[4]  = "D";
-letter_array[5]  = "E";
-letter_array[6]  = "F";
-letter_array[7]  = "G";
-letter_array[8]  = "H";
+letter_array[1]  = "A\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[2]  = "B\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[3]  = "C\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[4]  = "D\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[5]  = "E\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[6]  = "F\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[7]  = "G\n\n\n\n\n\nTarget                                                                                 Non-Target";
+letter_array[8]  = "H\n\n\n\n\n\nTarget                                                                                 Non-Target";
 letter_array[9]  = "I";
 letter_array[10] = "J";
 letter_array[11] = "K";
@@ -52,7 +52,7 @@ letter_array[26] = "X";#switched these because of 0-back task
 array <string> my_letters[ntrls]; #will contain all the letters
 array <int> port_code_letters[ntrls]; #used for adding the correct port code to the letter
 
-
+instruction_trial.present();
 loop #so that the bdf starts saving data
 int start = 1;
 until

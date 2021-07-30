@@ -29,6 +29,15 @@ trial{ #this is the first screen to prepare people
 	
 }start_trial;
 
+trial{ #this is the first screen to prepare people 
+  trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1;   # left-ctrl button
+   picture {
+		text {font_size=25; font="Arial"; caption ="Press left CTRL if the letter is the same as 2 letters ago \n \n Press right CTRL when it is not the same as 2 letters ago \n \n \n \n press the left ctrl to continue"; font_color = 200,200,200;};
+      x=0;y=0;};
+}instruction_trial;
+
 trial{ #this is the target trial 
   trial_duration = 1000;        	
 	stimulus_event {

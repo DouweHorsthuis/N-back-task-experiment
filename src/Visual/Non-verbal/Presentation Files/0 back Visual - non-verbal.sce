@@ -40,7 +40,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Please press the LEFT ctrl after you see the square in the left top corner \n \n Please press the RIGHT ctrl after you see the square anywhere else \n \n \n \n press the left ctrl to continue"; font_color = 200,200,200;};
+		text {font_size=25; font="Arial"; caption ="Press left CTRL when the square is in the left top corner \n \n Press right CTRL if the square is anywhere else \n \n \n \n Press any CTRL to continue"; font_color = 200,200,200;};
       x=0;y=0;};
 }instruction_trial;
 
@@ -65,7 +65,7 @@ trial{ #this is the non-target trial
 }nt_trial;
 
 trial{ #this is the isi trial 
-  trial_duration = 250;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {bitmap pic_cross;
 		x=0; y=0;
