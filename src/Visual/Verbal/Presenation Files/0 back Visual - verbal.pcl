@@ -22,32 +22,32 @@ order_in.close();
 
 
 array <string> letter_array[26];
-letter_array[1]  = "A\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[2]  = "B\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[3]  = "C\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[4]  = "D\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[5]  = "E\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[6]  = "F\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[7]  = "G\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[8]  = "H\n\n\n\n\n\nTarget                                                                                 Non-Target";
-letter_array[9]  = "I";
-letter_array[10] = "J";
-letter_array[11] = "K";
-letter_array[12] = "L";
-letter_array[13] = "M";
-letter_array[14] = "N";
-letter_array[15] = "O";
-letter_array[16] = "P";
-letter_array[17] = "Q";
-letter_array[18] = "R";
-letter_array[19] = "S";
-letter_array[20] = "T";
-letter_array[21] = "U";
-letter_array[22] = "V";
-letter_array[23] = "W";
-letter_array[24] = "Z";#switched these because of 0-back task
-letter_array[25] = "Y";
-letter_array[26] = "X";#switched these because of 0-back task
+letter_array[1]  = "\n\n\n\n\n\n\n\nA\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[2]  = "\n\n\n\n\n\n\n\nB\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[3]  = "\n\n\n\n\n\n\n\nC\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[4]  = "\n\n\n\n\n\n\n\nD\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[5]  = "\n\n\n\n\n\n\n\nE\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[6]  = "\n\n\n\n\n\n\n\nF\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[7]  = "\n\n\n\n\n\n\n\nG\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[8]  = "\n\n\n\n\n\n\n\nH\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[9]  = "\n\n\n\n\n\n\n\nI\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[10] = "\n\n\n\n\n\n\n\nJ\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[11] = "\n\n\n\n\n\n\n\nK\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[12] = "\n\n\n\n\n\n\n\nL\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[13] = "\n\n\n\n\n\n\n\nM\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[14] = "\n\n\n\n\n\n\n\nN\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[15] = "\n\n\n\n\n\n\n\nO\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[16] = "\n\n\n\n\n\n\n\nP\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[17] = "\n\n\n\n\n\n\n\nQ\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[18] = "\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[19] = "\n\n\n\n\n\n\n\nS\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[20] = "\n\n\n\n\n\n\n\nT\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[21] = "\n\n\n\n\n\n\n\nU\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[22] = "\n\n\n\n\n\n\n\nV\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[23] = "\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[24] = "\n\n\n\n\n\n\n\nZ\n\n\n\n\n\n\nTarget                                                                 Non-Target";#switched these because of 0-back task
+letter_array[25] = "\n\n\n\n\n\n\n\nY\n\n\n\n\n\n\nTarget                                                                 Non-Target";
+letter_array[26] = "\n\n\n\n\n\n\n\nX\n\n\n\n\n\n\nTarget                                                                 Non-Target";#switched these because of 0-back task
 
 array <string> my_letters[ntrls]; #will contain all the letters
 array <int> port_code_letters[ntrls]; #used for adding the correct port code to the letter

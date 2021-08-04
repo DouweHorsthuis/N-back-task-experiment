@@ -13,7 +13,7 @@ pulse_width = 10;
 pcl_file = "0 back Visual - verbal.pcl";
 begin;
 
-text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                                 Non-Target"; font_size = 30; font_color = 200,200,200;  } t_nt_text;
+text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
 picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
 
 trial{ #this is the first screen to prepare people 
@@ -42,10 +42,8 @@ trial{ #this is the target trial
 		picture {	
 			text {	
 				caption = "!";
-				text_align = align_center;
-				font_color = 0,0,0;
 			}t_txt;
-			x = 256; y = -256;
+			x = 0; y = 0;
 		}t_pic; 
 		port_code = 10;
 		#target_button = 1;  
@@ -58,10 +56,8 @@ trial{ #this is the non-target trial
 		picture {	
 			text {	
 				caption = "!";
-				text_align = align_center;
-				font_color = 0,0,0;
 			}nt_txt;
-			x = 256; y = -256;
+			x = 0; y = 0;
 		}nt_pic; 
 		port_code = 11; 
 		#target_button = 2; 

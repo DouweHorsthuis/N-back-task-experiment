@@ -1,7 +1,5 @@
-
-
-int ntrls = 100; # number of trials (needs to be devidable by 5) 
-string direc = "C://Users//dohorsth//Dropbox (EinsteinMed)//Ana and Douwe - work//cystinosis paradigms//N-back//Visual//Presentation Files//";
+int ntrls = 30; # number of trials (needs to be devidable by 5) 
+string direc = scenario_directory;
 
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
@@ -19,6 +17,7 @@ begin
 end;
 
 order_in.close();
+
 
 array <string> letter_array[26];
 letter_array[1]  = "\n\n\n\n\n\n\n\nA\n\n\n\n\n\n\nTarget                                                                 Non-Target";
@@ -68,8 +67,8 @@ i > ntrls
 begin
 	if t_or_nt[i]== 1 then #non-target
 		#port_code_letters[i]=11; #0-back
-		port_code_letters[i]=21; #1-back
-		#port_code_letters[i]=31; #2-back
+		#port_code_letters[i]=21; #1-back
+		port_code_letters[i]=31; #2-back
 		letter = random(1,26);
 		if letter_array[letter]==my_letters[i-1] || letter_array[letter]==my_letters[i-2] || letter_array[letter]==my_letters[i-3] || letter_array[letter]==my_letters[i-4] then #check that it's the same as the used consonants
 			loop #if it's the same
@@ -83,10 +82,10 @@ begin
 	elseif t_or_nt[i]== 2 then #target
 		#port_code_letters[i]=12;#0-back 
 		#my_letters[i] = letter_array[26]; #0-back (has to be X)
-		port_code_letters[i]=22;#1-back 
-		my_letters[i] = my_letters[i-1];#1-back
-		#port_code_letters[i]=32;#2-back 
-		#my_letters[i] = my_letters[i-2];#2-back
+		#port_code_letters[i]=22;#1-back 
+		#my_letters[i] = my_letters[i-1];#1-back
+		port_code_letters[i]=32;#2-back 
+		my_letters[i] = my_letters[i-2];#2-back
 	end;
 	i=i+1;
 end;
