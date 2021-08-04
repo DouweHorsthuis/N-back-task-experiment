@@ -1,16 +1,16 @@
-scenario = "0 back Auditory";
+scenario = "N back Auditory";
 
 no_logfile = false;
 scenario_type = trials;
 response_matching = simple_matching;
 default_background_color = 128, 128, 128;
-default_text_color = 200,200,200;
+default_text_color = 255, 0, 255;
 default_font_size = 40;  
 active_buttons = 2;
 button_codes = 1,2;
 write_codes = false; 
 pulse_width = 10;
-pcl_file = "0 back Auditory.pcl";
+pcl_file = "N back Auditory.pcl";
 begin;
 #loading stimuli
 sound { wavefile { filename = "a.wav"; preload = true; }; } a;

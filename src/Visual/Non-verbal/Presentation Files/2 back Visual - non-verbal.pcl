@@ -1,7 +1,7 @@
 #2 back
 
 int ntrls = 100; # number of trials (needs to be devidable by 5) 
-string direc = "C://Users//dohorsth//Documents//GitHub//N-back-task-experiment//src//Visual//Non-verbal//Presentation Files//";
+string direc = scenario_directory;
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
 #string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");

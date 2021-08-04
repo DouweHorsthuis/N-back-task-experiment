@@ -1,6 +1,5 @@
-#1 back
-
-int ntrls = 100; # number of trials (needs to be devidable by 5) 
+# 0-back
+int ntrls = 20; # number of trials (needs to be devidable by 5) 
 string direc = scenario_directory;
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
@@ -50,24 +49,24 @@ until
 i > ntrls
 begin
 	if t_or_nt[i]== 1 then #non-target
-		#port_code_location[i]=11; #0-back
-		port_code_location[i]=21; #1-back
+		port_code_location[i]=11; #0-back
+		#port_code_location[i]=21; #1-back
 		#port_code_location[i]=31; #2-back
-		location = random(1,8); #because it's NOT 0-back it can be any location
+		location = random(2,8); #because it's 0-back location 1 is target
 		if pic_location[location]==my_locations[i-1] || pic_location[location]==my_locations[i-2] || pic_location[location]==my_locations[i-3] || pic_location[location]==my_locations[i-4] then
 			loop #if it's the same
-			location = random(1,8);;#choose new location until
+			location = random(2,8);;#choose new location until
 			until pic_location[location]!=my_locations[i-1] && pic_location[location]!=my_locations[i-2] && pic_location[location]!=my_locations[i-3] && pic_location[location]!=my_locations[i-4] #location is not the same as previous locations
 			begin
-				location = random(1,8);
+				location = random(2,8);
 			end;
 		end;
 		my_locations[i]=pic_location[location];
 	elseif t_or_nt[i]== 2 then #target
-		#port_code_location[i]=12;#0-back 
-		#my_locations[i]=pic_location[1]; #0-back, so it's always left top corner
-		port_code_location[i]=22;#1-back 
-		my_locations[i] = my_locations[i-1];#1-back
+		port_code_location[i]=12;#0-back 
+		my_locations[i]=pic_location[1]; #0-back, so it's always left top corner
+		#port_code_location[i]=22;#1-back 
+		#my_locations[i] = my_locations[i-1];#1-back
 		#port_code_location[i]=32;#2-back 
 		#my_locations[i] = my_locations[i-2];#2-back
 	end;
