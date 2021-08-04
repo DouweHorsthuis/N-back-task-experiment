@@ -1,4 +1,4 @@
-scenario = "2 back Visual - verbal";
+scenario = "0 back Visual - verbal";
 
 no_logfile = false;
 scenario_type = trials;
@@ -10,61 +10,61 @@ active_buttons = 2;
 button_codes = 1,2;
 write_codes = false; 
 pulse_width = 10;
-pcl_file = "2 back Visual - verbal.pcl";
+pcl_file = "0 back Visual - verbal.pcl";
 begin;
-
+bitmap { filename = "0-back.png"; preload = true; } instructions_bit;
 text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
 picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
+picture { bitmap instructions_bit;x=0; y=0;} instructions_pic;
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # left-mouse button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
       x=0;y=0;};
 	code = "201 start recording";  
 	port_code = 201; 
-	
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
-   picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL if the letter is the same as 2 letters ago \n \n Press right CTRL when it is not the same as 2 letters ago \n \n \n \n press the left ctrl to continue"; font_color = 200,200,200;};
-      x=0;y=0;};
+   picture instructions_pic;
 }instruction_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 1000;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
 				caption = "!";
 			}t_txt;
-			x = 256; y = -256;
+			x = 0; y = 0;
 		}t_pic; 
 		port_code = 10;
+		#target_button = 1;  
 	}t_event;
 }t_trial;
 
 trial{ #this is the non-target trial 
-  trial_duration = 1000;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
 				caption = "!";
 			}nt_txt;
-			x = 256; y = -256;
+			x = 0; y = 0;
 		}nt_pic; 
 		port_code = 11; 
+		#target_button = 2; 
 	}nt_event;
 }nt_trial;
 
 trial { 
-    trial_duration = 500; 
+    trial_duration = 500;
      picture t_nt_pic;  
     code = "target";
     target_button = 1; #so that a hit shows up if you press left button

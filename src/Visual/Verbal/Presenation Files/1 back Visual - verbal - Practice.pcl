@@ -1,7 +1,7 @@
 
 
-int ntrls = 100; # number of trials (needs to be devidable by 5) 
-string direc = "C://Users//dohorsth//Dropbox (EinsteinMed)//Ana and Douwe - work//cystinosis paradigms//N-back//Visual//Presentation Files//";
+int ntrls = 20; # number of trials (needs to be devidable by 5) 
+string direc = scenario_directory;
 
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
