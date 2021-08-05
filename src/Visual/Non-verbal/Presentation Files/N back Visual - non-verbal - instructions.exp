@@ -1,5 +1,5 @@
-<ver>22</ver>
-<efn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal - instructions.exp</efn>
+<ver>20.1</ver>
+<efn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\N back Visual - non-verbal - instructions.exp</efn>
 <author>Douwe Horsthuis</author>
 <con>
 <pause>P</pause>
@@ -20,20 +20,19 @@
 </con>
 <dbi></dbi>
 <dbs>button</dbs>
-<ddi>1</ddi>
+<ddi>0</ddi>
 <dds>
 <icm_profile></icm_profile>
-<orient>0</orient>
 <use_icm>0</use_icm>
 </dds>
-<ddv>Intel(R) UHD Graphics 630</ddv>
+<ddv>Primary Display Driver</ddv>
 <depchg>1</depchg>
 <discard_windows_messages>0</discard_windows_messages>
 <display_status_window>1</display_status_window>
 <dmd>32</dmd>
 <dmh>1024</dmh>
 <dmr>60</dmr>
-<dmrf>60.0197398255426</dmrf>
+<dmrf>60.02</dmrf>
 <dmw>1280</dmw>
 <docs>
 <args></args>
@@ -41,16 +40,15 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Stimuli</dsd>
-<dwm>0</dwm>
+<dsd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Stimuli</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.sce</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.pcl</filename>
-<filename>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>1.0</exp_version>
@@ -133,7 +131,7 @@
 <idt>1000</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Logfiles</lfd>
+<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Logfiles</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -165,14 +163,23 @@
 <one_processor>2</one_processor>
 <oports>
 <p>
-<cs></cs>
-<is></is>
-<mtype>serial</mtype>
-<os></os>
-<piai>COM1</piai>
-<pian>Serial Port</pian>
-<pihpn>COM1</pihpn>
-<pindex>0</pindex>
+<ama>0</ama>
+<ami>0</ami>
+<at>0</at>
+<dpw>5</dpw>
+<dsdi>0</dsdi>
+<dsi>0</dsi>
+<dsn>Data port</dsn>
+<igm>0</igm>
+<il>0</il>
+<ivm>0</ivm>
+<mtype>dig</mtype>
+<piai>LPT3</piai>
+<pian>Parallel Port</pian>
+<pihpn>LPT3</pihpn>
+<pindex>1</pindex>
+<rs>1</rs>
+<rt>0</rt>
 </p>
 </oports>
 <out_encrypt_key></out_encrypt_key>
@@ -195,23 +202,6 @@
 <piai>COM1</piai>
 <pian>Serial Port</pian>
 <pihpn>COM1</pihpn>
-</device>
-<device>
-<parameters>
-<cts>0</cts>
-<dsrin>0</dsrin>
-<dsrout>0</dsrout>
-<dtr>disable</dtr>
-<rts>disable</rts>
-<set_fifo>1</set_fifo>
-<spd></spd>
-<spp></spp>
-<spr></spr>
-<sps></sps>
-</parameters>
-<piai>COM3</piai>
-<pian>Serial Port</pian>
-<pihpn>COM3</pihpn>
 </device>
 </port_devices>
 <rdl>
@@ -339,12 +329,8 @@
 <name>Speech Recognition</name>
 <speech>
 <engine_class></engine_class>
-<lang></lang>
 <mc>0</mc>
-<prerecord>0</prerecord>
 <rw>0</rw>
-<sil>0</sil>
-<srgs></srgs>
 <uwd>0</uwd>
 <vocab></vocab>
 </speech>
@@ -497,7 +483,7 @@
 <offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\0 back Visual - non-verbal - instructions.sce</sfn>
 </sce>
 <sce>
 <idv>
@@ -514,7 +500,7 @@
 <offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\1 back Visual - non-verbal - instructions.sce</sfn>
 </sce>
 <sce>
 <idv>
@@ -531,21 +517,17 @@
 <offset>157</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Documents\GitHub\N-back-task-experiment\src\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Non-verbal\Presentation Files\2 back Visual - non-verbal - instructions.sce</sfn>
 </sce>
 <sct>
 <capture_device>
 <abort_on_max_drops>0</abort_on_max_drops>
 <bps></bps>
 <chan></chan>
-<closest_match>0</closest_match>
-<closest_match_max></closest_match_max>
-<closest_match_min>1, 16, 8000</closest_match_min>
 <do_rec_vol>1</do_rec_vol>
 <freq></freq>
 <ignore_drops>1</ignore_drops>
 <max_drops>250</max_drops>
-<max_rec_dur>60</max_rec_dur>
 <name>None</name>
 <rec_vol>0</rec_vol>
 <show_drops>1</show_drops>
@@ -554,6 +536,7 @@
 <combine>0</combine>
 <ignore></ignore>
 <isr>0</isr>
+<max_rec_dur>60</max_rec_dur>
 <md></md>
 <mio></mio>
 <off_inter></off_inter>
@@ -573,7 +556,7 @@
 <halt_on_underrun>1</halt_on_underrun>
 <max_mix_length>50</max_mix_length>
 <min_mix_length>25</min_mix_length>
-<mixer>dx_software</mixer>
+<mixer>custom</mixer>
 <rewind_distance>10</rewind_distance>
 <sh_period>0</sh_period>
 <side_speakers>1</side_speakers>

@@ -99,8 +99,12 @@ In the Presentation Files folder you'll find the experiment and the sequences th
 ### Trigger codes
 Explain trigger codes
 
-### Timing
-Explain timing of the trials 
+### Timing  
+#### Auditory N-back
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 1ms delay between the onset of any stimulus and the trigger**. 
+
+#### Visual Non-Verbal
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus).
 
 
 ## Contact

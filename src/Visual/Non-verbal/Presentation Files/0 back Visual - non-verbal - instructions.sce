@@ -4,11 +4,11 @@ no_logfile = false;
 scenario_type = trials;
 response_matching = simple_matching;
 default_background_color = 128, 128, 128;
-default_text_color = 255, 0, 255;
+default_text_color = 200,200,200;
 default_font_size = 40;  
 active_buttons = 2;
 button_codes = 1,2;
-write_codes = false; 
+write_codes = true; 
 pulse_width = 10;
 pcl_file = "0 back Visual - non-verbal.pcl";
 begin;
@@ -32,8 +32,6 @@ trial{ #this is the first screen to prepare people
    picture {
 		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
       x=0;y=0;};
-	code = "201 start recording";  
-	port_code = 201; 
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
@@ -42,6 +40,21 @@ trial{ #this is the first screen to prepare people
    terminator_button = 1,2;   # left-ctrl button
 	picture instructions_pic;
 }instruction_trial;
+
+trial{ # the first stim is too quick if there is no delay. This trial puts 2sec between the start and the stim
+	trial_duration = 2000; #2 sec before the first stim
+	stimulus_event {
+		picture {
+		text {caption ="+";};
+      x=0;y=0;};
+	}wait_event;
+	stimulus_event {
+	nothing{};
+	deltat=500;
+		code = "201 start recording";  
+	port_code = 201; 
+	}code_event;
+}wait_trial;
 
 trial{ #this is the target trial 
   trial_duration = 250;        	

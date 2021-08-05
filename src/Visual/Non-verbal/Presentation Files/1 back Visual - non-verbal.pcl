@@ -1,13 +1,11 @@
-#1 back
-
 int ntrls = 100; # number of trials (needs to be devidable by 5) 
 string direc = scenario_directory;
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
-#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
-string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 order_in.open(file_path);
-order_in.set_delimiter( '\n' ); # for get_line()		
+order_in.set_delimiter( '\n' ); # for get_line()			
 loop
 int i = 1; 
 until
@@ -43,7 +41,7 @@ begin
 	start_trial.present();
 	start = start +1;
 end;
-
+wait_trial.present();
 loop #this loop will assign all the info to each trial
 int i = 5; int location; 
 until 
@@ -82,14 +80,14 @@ begin
 	if t_or_nt[i] == 1 then #non-target
 		nontarget.clear(); #clearing picture
 		nontarget.add_part(my_locations[i], 0 , 0); #adding correct stimuli picture
-		nt_event.set_port_code(port_code_location[i]); #adding correct portcode
-		nt_event.set_event_code(string(port_code_location[i])); #creating a string and using it as event code
+		code_nt_event.set_port_code(port_code_location[i]); #adding correct portcode
+		code_nt_event.set_event_code(string(port_code_location[i])); #creating a string and using it as event code
 		nt_trial.present(); # presenting 
    elseif t_or_nt[i] == 2 then #target
 		target.clear(); 
 		target.add_part(my_locations[i], 0 , 0);
-		t_event.set_port_code(port_code_location[i]);
-		t_event.set_event_code(string(port_code_location[i]));
+		code_t_event.set_port_code(port_code_location[i]);
+		code_t_event.set_event_code(string(port_code_location[i]));
 		t_trial.present();
 	end;
 	isi_trial.present();
