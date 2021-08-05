@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\N back Visual - verbal.exp</efn>
+<efn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\N back Visual - verbal - triggertest.exp</efn>
 <author>Douwe Horsthuis</author>
 <con>
 <pause>P</pause>
@@ -43,12 +43,7 @@
 <dsd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Stimuli</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\1 back Visual - verbal.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\2 back Visual - verbal.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\1 back Visual - verbal.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\2 back Visual - verbal.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal - triggertest.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>1.0</exp_version>
@@ -88,12 +83,6 @@
 <asn>
 <sid>-1</sid>
 </asn>
-<asn>
-<sid>-2</sid>
-</asn>
-<asn>
-<sid>-2</sid>
-</asn>
 </ssa>
 </man>
 </exparam>
@@ -107,8 +96,6 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
-<sce>1</sce>
-<sce>1</sce>
 <sce>1</sce>
 </do_upload>
 <host></host>
@@ -132,7 +119,7 @@
 <ilc>0</ilc>
 <ip_chans></ip_chans>
 <lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles</lfd>
-<lnb>0</lnb>
+<lnb>2</lnb>
 <lno>3</lno>
 <log>
 <append_counter>1</append_counter>
@@ -472,52 +459,23 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Ctrl</ibn>
-<ibn>Right Ctrl</ibn>
+<ibn>Space</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<index>1</index>
 <label></label>
-<label></label>
-<offset>29</offset>
-<offset>157</offset>
+<offset>57</offset>
 </idv>
-<overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal.sce</sfn>
-</sce>
-<sce>
 <idv>
-<device_type>3</device_type>
-<dx_device_type>19</dx_device_type>
-<ibn>Ctrl</ibn>
-<ibn>Right Ctrl</ibn>
-<idn>Keyboard</idn>
-<index>0</index>
+<device_type>2</device_type>
+<dx_device_type>18</dx_device_type>
+<ibn>Button 0</ibn>
+<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<label></label>
-<offset>29</offset>
-<offset>157</offset>
+<offset>12</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\1 back Visual - verbal.sce</sfn>
-</sce>
-<sce>
-<idv>
-<device_type>3</device_type>
-<dx_device_type>19</dx_device_type>
-<ibn>Ctrl</ibn>
-<ibn>Right Ctrl</ibn>
-<idn>Keyboard</idn>
-<index>0</index>
-<index>1</index>
-<label></label>
-<label></label>
-<offset>29</offset>
-<offset>157</offset>
-</idv>
-<overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\2 back Visual - verbal.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal - triggertest.sce</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -593,7 +551,6 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
-<ulo>0ms delay between stimulus and trigger tested on 8/5/2021 in Adult Booth Right</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>

@@ -1,16 +1,16 @@
-scenario = "2 back Visual - verbal";
+scenario = "0 back Visual - verbal";
 
 no_logfile = false;
 scenario_type = trials;
 response_matching = simple_matching;
-default_background_color = 128, 128, 128;
+default_background_color = 0, 0, 0;
 default_text_color = 200, 200, 200;
-default_font_size = 40;  
+default_font_size =40;  
 active_buttons = 2;
 button_codes = 1,2;
-write_codes = true;  
+write_codes = true; 
 pulse_width = 10;
-pcl_file = "2 back Visual - verbal.pcl";
+pcl_file = "0 back Visual - verbal - triggertest.pcl";
 begin;
 
 text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
@@ -21,8 +21,8 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # left-mouse button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
-      x=0;y=0;};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
+      x=0;y=0;}; 
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
@@ -55,6 +55,7 @@ trial{ #this is the target trial
 		picture {	
 			text {	
 				caption = "!";
+				background_color = 200, 200, 200;
 			}t_txt;
 			x = 0; y = 0;
 		}t_pic;  
@@ -66,17 +67,19 @@ trial{ #this is the target trial
 	}s1_t_code_event;
 }t_trial;
 
-trial{ #this is the target trial 
+trial{ #this is the non-target trial 
   trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
 				caption = "!";
+				background_color = 200, 200, 200;
 			}nt_txt;
 			x = 0; y = 0;
-		}nt_pic;  
+		}nt_pic; 
+		#target_button = 2; 
 	}nt_event;
-	stimulus_event {
+		stimulus_event {
 	nothing{};
 	deltat=2;
 	port_code = 11; 
@@ -84,7 +87,7 @@ trial{ #this is the target trial
 }nt_trial;
 
 trial { 
-    trial_duration = 500; 
+    trial_duration = 500;
      picture t_nt_pic;  
     code = "target";
     target_button = 1; #so that a hit shows up if you press left button

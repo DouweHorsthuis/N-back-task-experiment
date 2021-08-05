@@ -8,7 +8,7 @@ default_text_color = 200, 200, 200;
 default_font_size = 40;  
 active_buttons = 2;
 button_codes = 1,2;
-write_codes = false; 
+write_codes = true;  
 pulse_width = 10;
 pcl_file = "1 back Visual - verbal.pcl";
 begin;
@@ -23,8 +23,6 @@ trial{ #this is the first screen to prepare people
    picture {
 		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
       x=0;y=0;};
-	code = "201 start recording";  
-	port_code = 201; 
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
@@ -32,34 +30,57 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL if the letter is the same as the 1 before \n \n Press right CTRL when it is not the same as the 1 before \n \n \n \n press the left ctrl to continue"; font_color = 200,200,200;};
+		text {font_size=25; font="Arial"; caption ="Press left CTRL when you see the letter X \n \n Press right CTRL for any other letter \n \n \n \n Press left CTRL to continue";};
       x=0;y=0;};
 }instruction_trial;
 
+trial{ # the first stim is too quick if there is no delay. This trial puts 2sec between the start and the stim
+	trial_duration = 2000; #2 sec before the first stim
+	stimulus_event {
+		picture {
+		text {caption ="+";};
+      x=0;y=0;};
+	}wait_event;
+	stimulus_event {
+	nothing{};
+	deltat=500;
+		code = "201 start recording";  
+	port_code = 201; 
+	}code_event;
+}wait_trial;
+
 trial{ #this is the target trial 
-  trial_duration = 1000;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
 				caption = "!";
 			}t_txt;
-			x = 256; y = -256;
-		}t_pic; 
-		port_code = 10;
+			x = 0; y = 0;
+		}t_pic;  
 	}t_event;
+	stimulus_event {
+	nothing{};
+	deltat=2;
+	port_code = 10; 
+	}s1_t_code_event;
 }t_trial;
 
-trial{ #this is the non-target trial 
-  trial_duration = 1000;        	
+trial{ #this is the target trial 
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
 				caption = "!";
 			}nt_txt;
-			x = 256; y = -256;
-		}nt_pic; 
-		port_code = 11; 
+			x = 0; y = 0;
+		}nt_pic;  
 	}nt_event;
+	stimulus_event {
+	nothing{};
+	deltat=2;
+	port_code = 11; 
+	}s1_nt_code_event;
 }nt_trial;
 
 trial { 

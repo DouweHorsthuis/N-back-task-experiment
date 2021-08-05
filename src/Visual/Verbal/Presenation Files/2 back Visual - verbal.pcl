@@ -1,12 +1,12 @@
 
 
 int ntrls = 100; # number of trials (needs to be devidable by 5) 
-string direc = "C://Users//dohorsth//Dropbox (EinsteinMed)//Ana and Douwe - work//cystinosis paradigms//N-back//Visual//Presentation Files//";
+string direc = scenario_directory;
 
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
-#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
-string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()		
 loop
@@ -61,7 +61,7 @@ begin
 	start_trial.present();
 	start = start +1;
 end;
-
+wait_trial.present();
 loop #this loop will assign all the info to each trial
 int i = 5; int letter; 
 until 
@@ -102,8 +102,8 @@ begin
 		nt_txt.set_caption(my_letters[i]);
 		nt_txt.redraw();
 		nt_pic.add_part(nt_txt,0,0);
-		nt_event.set_port_code(port_code_letters[i]);
-		nt_event.set_event_code(string(port_code_letters[i]));
+		s1_nt_code_event.set_port_code(port_code_letters[i]);
+		s1_nt_code_event.set_event_code(string(port_code_letters[i]));
 		nt_trial.present();
 		isi_nt.present();
    elseif t_or_nt[i] == 2 then #target
@@ -111,8 +111,8 @@ begin
 		t_txt.set_caption(my_letters[i]);
 		t_txt.redraw();
 		t_pic.add_part(t_txt,0,0);
-		t_event.set_port_code(port_code_letters[i]);
-		t_event.set_event_code(string(port_code_letters[i]));
+		s1_t_code_event.set_port_code(port_code_letters[i]);
+		s1_t_code_event.set_event_code(string(port_code_letters[i]));
 		t_trial.present();
 		isi_t.present();
 	end;

@@ -106,6 +106,9 @@ Having measured the time between the stimuli and the trigger with an oscilosscop
 #### Visual Non-Verbal
 Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus).
 
+#### Visual Verbal
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 2ms (this is the time the video card need to produce the letters, this is a little unusual because all visual stimuli normally have a 7ms delay. This difference (5ms) is likely caused by not using a picture but presentation making the letters).
+
 
 ## Contact
 

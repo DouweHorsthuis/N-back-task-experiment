@@ -8,7 +8,7 @@ default_text_color = 200, 200, 200;
 default_font_size = 40;  
 active_buttons = 2;
 button_codes = 1,2;
-write_codes = false; 
+write_codes = true; 
 pulse_width = 10;
 pcl_file = "N back Visual - verbal.pcl";
 begin;
