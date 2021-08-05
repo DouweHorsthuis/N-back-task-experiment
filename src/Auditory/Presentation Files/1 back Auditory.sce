@@ -8,7 +8,7 @@ default_text_color = 200,200,200;
 default_font_size = 40;  
 active_buttons = 2;
 button_codes = 1,2;
-write_codes = false; 
+write_codes = true;
 pulse_width = 10;
 pcl_file = "1 back Auditory.pcl";
 begin;
@@ -49,6 +49,22 @@ trial{ #this is the first screen to prepare people
       x=0;y=0;};
 }instruction_trial;
 
+trial{ # the first stim is too quick if there is no delay. This trial puts 2sec between the start and the stim
+	trial_duration = 2000; #2 sec before the first stim
+	stimulus_event {
+		picture {
+		text {caption ="+";};
+      x=0;y=0;};
+	}wait_event;
+	stimulus_event {
+	nothing{};
+	deltat=500;
+		code = "201 start recording";  
+	port_code = 201; 
+	}code_event;
+}wait_trial;
+
+
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
    trial_type = specific_response;  # button is pressed
@@ -56,8 +72,6 @@ trial{ #this is the first screen to prepare people
    picture {
 		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
       x=0;y=0;};
-	code = "201 start recording";  
-	port_code = 201; 
 }start_trial;
 
 trial{ #this is to put a fixation cross
