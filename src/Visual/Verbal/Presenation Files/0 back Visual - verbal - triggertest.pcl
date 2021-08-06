@@ -1,4 +1,72 @@
+##ET##
+eye_tracker EyeLink = new eye_tracker( "PresLink" );#this starts the eyetracker , the name of this (currently "PresLink") is whatever your extention is called (sometimes "EyeTracker")
+int dummy_mode = 0; #if this is 1 you can run the paradigm without eyetracking
+if dummy_mode == 1 then
+	EyeLink.set_parameter("tracker_address", "");
+end;         
+#connect to Eyelink tracker.
+EyeLink.start_tracking();
+string edfname_final = logfile.subject() + "NBv_v_1"; #names the EDF file, choose here the name of your individual edf file
+string edfname_out = "NBv_v_1";
 
+#here we are checking if the edf file already exists and if so it add a +1 to the ending
+int cntr = 1;
+loop
+	bool good_edfname = false; 
+until
+	good_edfname == true
+begin
+	if file_exists(logfile_directory + edfname_final + ".edf") then
+		cntr = cntr + 1;
+		edfname_final = logfile.subject() + "NBv_v_1" + string(cntr); # + ".edf";
+		edfname_out = "NBv_v_1" + string(cntr) 
+	else
+		good_edfname = true
+	end;
+end;
+
+if edfname_out.count() > 8 then
+	exit("EDF Filename needs to be smaller than 8 characters long (letters, numbers and underscores only)"); #if your EDF filename is longer it might start giving trouble specially if you do more than 9 blocks
+end;
+array<string> temp[0];
+edfname_out.split(".", temp);
+edfname_out = temp[1];
+EyeLink.set_parameter("open_edf_file",edfname_out+".edf");
+int display_height = display_device.height();
+int display_width  = display_device.width();
+EyeLink.send_command("screen_pixel_coords 0 0 " + string(display_width-1) + 
+	" " + string(display_height-1));
+EyeLink.send_message("DISPLAY_COORDS " + "0 0 " + string(display_width-1) + 
+	" " + string(display_height-1)); 
+string Eyelink_ver = EyeLink.get_parameter("tracker_version"); # get et version
+array <string> string_array[5];
+Eyelink_ver.split(" ",string_array);
+double el_v = double(string_array[3]); 
+EyeLink.send_command("file_event_filter = LEFT,RIGHT,FIXATION,SACCADE,BLINK,MESSAGE,BUTTON,INPUT");	#this ensures that Gaze data is recorded 
+EyeLink.send_command("link_event_filter = LEFT,RIGHT,FIXATION,SACCADE,BLINK,BUTTON,INPUT");
+if (el_v >=4.0) then
+	EyeLink.send_command("file_sample_data = LEFT,RIGHT,GAZE,AREA,GAZERES,STATUS,HTARGET,INPUT"); #Area token ensures Pupil size is recorded.
+	EyeLink.send_command("link_sample_data = LEFT,RIGHT,GAZE,GAZERES,AREA,STATUS,HTARGET,INPUT");
+else
+	EyeLink.send_command("file_sample_data = LEFT,RIGHT,GAZE,AREA,GAZERES,STATUS,INPUT");
+	EyeLink.send_command("link_sample_data = LEFT,RIGHT,GAZE,GAZERES,AREA,STATUS,INPUT"); 
+end;
+EyeLink.calibrate( et_calibrate_default, 1.0, 0.0, 0.0 );
+sub cleanup begin
+	EyeLink.send_command("set_idle_mode"); #eyelink goes in idle mode
+	EyeLink.send_command("clear_screen 0");#clear Host PC screen at end of session
+	wait_interval(500); 
+	EyeLink.send_command("close_data_file");#close the EDF file and then allow 100 msec to ensure it's closed
+	if dummy_mode != 1 then
+		EyeLink.set_parameter("get_edf_file",logfile_directory + edfname_final + ".edf");#transfer the EDF file to the logfile directory of the experiment	on the Display PC
+	end;
+	EyeLink.stop_tracking();
+end;	
+EyeLink.send_command("set_idle_mode");
+wait_interval(50);#in ms
+EyeLink.send_command("clear_screen 0") #clearing screen
+EyeLink.set_parameter("transfer_image", et_bit.filename()); #this will be on the hostpc's screen
+##################### ET #######################
 
 int ntrls = 100; # number of trials (needs to be devidable by 5) 
 string direc = scenario_directory;
@@ -96,7 +164,11 @@ int i=5;
 loop	 
 until
 	i > ntrls 
-begin	
+begin
+	### ET ###
+	EyeLink.send_command("record_status_message 'V 0-back " + string(i) + "/100 start'");	
+	EyeLink.send_string( "TRIALID " + string(i));
+	### ET ###		
 	if t_or_nt[i] == 1 then #non-target
 		nt_pic.clear(); 
 		nt_txt.set_caption(my_letters[i]);
@@ -104,6 +176,7 @@ begin
 		nt_pic.add_part(nt_txt,0,0);
 		s1_nt_code_event.set_port_code(port_code_letters[i]);
 		s1_nt_code_event.set_event_code(string(port_code_letters[i]));
+		EyeLink.send_message("nontarget_onset"); # put this in the line before you present your stimulus in the PCL file
 		nt_trial.present();
 		isi_nt.present();
    elseif t_or_nt[i] == 2 then #target
@@ -117,4 +190,9 @@ begin
 		isi_t.present();
 	end;
 	i=i+1;
+	EyeLink.send_command("record_status_message 'EndTrial'");
+	EyeLink.send_message("TRIAL_RESULT 0");
 end;
+end_trial.present();
+end_block_trial.present();
+cleanup();	

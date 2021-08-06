@@ -32,11 +32,13 @@
 This Project will have 3 different N-back tasks each designed to touch a different aspect of the working memory. 2 of them are Visual and 1 is auditory. 
 
 1. Visual-verbal
-    - For this experiment, participants will see a letter and have to do the N back task based on this.  
+    - For this experiment, participants will see a letter and have to do the N back task based on this.
+    - This experiment has eyetracking.
 
 2. Visual-non-verbal
     - For this experiment, participant will see a square and have to do the N-back task based on the location
-
+    - This experiment has eyetracking.  
+    
 3. Auditory 
     - For this experiment, participant will hear letter being said out loud and have to do the N back task based on this.
 
@@ -67,7 +69,14 @@ Add here all the presentation settings. We haven't tested it so no info as of ye
 ## Info about the paradigm  
 
 ### Stimuli
-The stimuli are all created by ourselves. 
+1. Visual-verbal
+The stimuli are letter that presentation creates each time. This has a 2ms effect on the timing (see [Timing](#visual-verbal)), that we correct for. 
+
+2. Visual-non-verbal
+The stimuli are made in paint. They have a 7ms effect on the timing (as any picture that needs to be loaded does). See [Timing](#visual-non-verbal) for more info.   
+      
+3. Auditory 
+The stimuli are recorded in the lab by [Ana Francisco](https://github.com/anafrancisco) and voiced by Alaina Berruti (lab member). They are cut in length so that the onset in of the stimulus in presentation is also the exect time the letter's sound start. THe do have different durations, this is why we have the trial lasting longer than the longest sound. 
 
 ### Logfiles  
 Logfiles with experiment reaction times and other information automatically should be placed in the logfile folder. In these logfiles you will find the behavioral information of each time the experiment is ran.  

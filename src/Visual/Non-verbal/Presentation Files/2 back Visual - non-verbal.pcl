@@ -170,5 +170,6 @@ begin
 	EyeLink.send_command("record_status_message 'EndTrial'");
 	EyeLink.send_message("TRIAL_RESULT 0");
 end;
+end_trial.present();
 end_block_trial.present();
 cleanup();

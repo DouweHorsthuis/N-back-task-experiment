@@ -15,6 +15,7 @@ begin;
 
 text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
 picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
+bitmap { filename = "standard_et.jpg"; preload = true; } et_bit; # for the eyetracker
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
