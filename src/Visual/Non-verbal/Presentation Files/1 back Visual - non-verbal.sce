@@ -22,7 +22,7 @@ bitmap { filename = "6.png"; preload = true; } pic_6;
 bitmap { filename = "7.png"; preload = true; } pic_7;
 bitmap { filename = "8.png"; preload = true; } pic_8;
 bitmap { filename = "9.png"; preload = true; } pic_9;
-
+bitmap { filename = "standard_et.jpg"; preload = true; } et_bit; # for the eyetracker
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
