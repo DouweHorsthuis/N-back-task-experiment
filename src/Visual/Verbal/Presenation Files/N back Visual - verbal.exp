@@ -445,7 +445,7 @@
 <require_name_match>0</require_name_match>
 <reschg>1</reschg>
 <rng>1</rng>
-<rts>0</rts>
+<rts>1</rts>
 <sce>
 <idv>
 <device_type>3</device_type>
@@ -593,7 +593,7 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
-<ulo>0ms delay between stimulus and trigger tested on 8/5/2021 in Adult Booth Right</ulo>
+<ulo>0ms delay between stimulus and trigger and stabel, tested on 8/6/2021 in Adult Booth Right</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>

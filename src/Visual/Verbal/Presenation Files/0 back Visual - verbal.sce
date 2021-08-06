@@ -1,4 +1,4 @@
-0scenario = "0 back Visual - verbal";
+scenario = "0 back Visual - verbal";
 
 no_logfile = false;
 scenario_type = trials;
