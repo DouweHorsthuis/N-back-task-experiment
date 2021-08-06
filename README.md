@@ -12,7 +12,7 @@
 
 <h3 align="center">N-Back Task</h3>
 
-<h4 align="center">This is still a work in progress. N-Back task experiment for Presentation® NeuroBehavioral Systems, This tasks are being created for the Cystinosis experiment battery (2021). There will be 2 Visual versions (1 verbal and 1 non-verbal) and 1 auditory version.   
+<h4 align="center">N-Back task experiment for Presentation® NeuroBehavioral Systems, This tasks are being created for the Cystinosis experiment battery (2021). There will be 2 Visual versions (1 verbal and 1 non-verbal) and 1 auditory version.   
 </h4>
 
 
