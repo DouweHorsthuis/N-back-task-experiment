@@ -121,7 +121,7 @@ Having measured the time between the stimuli and the trigger with an oscilosscop
 
 ## Contact
 
-Your Name - [@douwejhorsthuis](https://twitter.com/douwejhorsthuis) - douwehorsthuis@gmail.com
+Douwe Horsthuis - [@douwejhorsthuis](https://twitter.com/douwejhorsthuis) - douwehorsthuis@gmail.com
 
 Project Link: [https://github.com/DouweHorsthuis/N-back-task-experiment/](https://github.com/DouweHorsthuis/N-back-task-experiment/)
 
