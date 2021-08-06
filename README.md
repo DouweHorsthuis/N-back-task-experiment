@@ -113,11 +113,16 @@ Explain trigger codes
 Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 1ms delay between the onset of any stimulus and the trigger**. 
 
 #### Visual Non-Verbal
-Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus).
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus).  
+
+![timing](https://github.com/DouweHorsthuis/N-back-task-experiment/images/visual_non_verbal_timing.jpeg)  
+It is clear that the onset of the trigger (orange) always is at the same time as where the visual stimulus (blue) changes from the norm.  
 
 #### Visual Verbal
 Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 2ms (this is the time the video card need to produce the letters, this is a little unusual because all visual stimuli normally have a 7ms delay. This difference (5ms) is likely caused by not using a picture but presentation making the letters).
 
+![timing](https://github.com/DouweHorsthuis/N-back-task-experiment/images/visual_verbal_timing.jpeg)  
+It is clear that the onset of the trigger (orange) always is at the same time as where the visual stimulus (blue) changes from the norm.
 
 ## Contact
 
