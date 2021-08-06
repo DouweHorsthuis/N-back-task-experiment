@@ -64,7 +64,7 @@ sub cleanup begin
 end;	
 EyeLink.send_command("set_idle_mode");
 wait_interval(50);#in ms
-EyeLink.send_command("clear_screen 0") #clearing screen
+EyeLink.send_command("clear_screen 0"); #clearing screen
 EyeLink.set_parameter("transfer_image", et_bit.filename()); #this will be on the hostpc's screen
 ##################### ET #######################
 int ntrls = 100; # number of trials (needs to be devidable by 5) 
@@ -170,5 +170,5 @@ begin
 	EyeLink.send_message("TRIAL_RESULT 0");
 end;
 end_trial.present();
-end_block_trial.present();
+end_trial.present();
 cleanup();

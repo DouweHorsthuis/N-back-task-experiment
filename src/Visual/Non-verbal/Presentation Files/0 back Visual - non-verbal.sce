@@ -66,7 +66,7 @@ trial{ #this is the target trial
 	}t_event;
 		stimulus_event {
 		nothing{};
-		deltat=7;  
+		deltat=6;  
 		port_code = 10; 
 	}code_t_event;
 }t_trial;
@@ -80,7 +80,7 @@ trial{ #this is the non-target trial
 	}nt_event;
 	stimulus_event {
 		nothing{};
-		deltat=7;  
+		deltat=6;  
 		port_code = 11; 
 	}code_nt_event;
 }nt_trial;
