@@ -10,7 +10,7 @@ active_buttons = 2;
 button_codes = 1,2;
 write_codes = true; 
 pulse_width = 10;
-pcl_file = "1 back Visual - non-verbal.pcl";
+pcl_file = "1 back Visual - non-verbal - instructions.pcl";
 begin;
 #loading stimuli
 bitmap { filename = "1.png"; preload = true; } pic_cross;
@@ -50,9 +50,7 @@ trial{ # the first stim is too quick if there is no delay. This trial puts 2sec 
 	}wait_event;
 	stimulus_event {
 	nothing{};
-	deltat=500;
-		code = "201 start recording";  
-	port_code = 201; 
+	deltat=500; 
 	}code_event;
 }wait_trial;
 
@@ -77,7 +75,7 @@ trial{ #this is the non-target trial
 }nt_trial;
 
 trial{ #this is the isi trial 
-  trial_duration = 250;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {bitmap pic_cross;
 		x=0; y=0;

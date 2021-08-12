@@ -51,8 +51,8 @@ trial{ # the first stim is too quick if there is no delay. This trial puts 2sec 
 }wait_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 500;        	
-	stimulus_event {
+  trial_duration = 485;  #slightly less then 1 refesh rate the time for creation of the next stim       	
+	stimulus_event {      #this makes sure it is 500ms and not 512ms
 		picture {	
 			text {	
 				caption = "!";
@@ -69,8 +69,8 @@ trial{ #this is the target trial
 }t_trial;
 
 trial{ #this is the non-target trial 
-  trial_duration = 500;        	
-	stimulus_event {
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms      	
+	stimulus_event {      
 		picture {	
 			text {	
 				caption = "!";
@@ -78,7 +78,6 @@ trial{ #this is the non-target trial
 			}nt_txt;
 			x = 0; y = 0;
 		}nt_pic; 
-		#target_button = 2; 
 	}nt_event;
 		stimulus_event {
 	nothing{};
@@ -88,14 +87,14 @@ trial{ #this is the non-target trial
 }nt_trial;
 
 trial { 
-    trial_duration = 500;
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms         	
      picture t_nt_pic;  
     code = "target";
     target_button = 1; #so that a hit shows up if you press left button
 } isi_t;
 
 trial { 
-    trial_duration = 500;  
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms   
      picture t_nt_pic;  
     code = "non-target";
     target_button = 2; #so that a hit shows up if you press right button

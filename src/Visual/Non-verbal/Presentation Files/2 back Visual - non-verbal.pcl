@@ -6,8 +6,8 @@ if dummy_mode == 1 then
 end;         
 #connect to Eyelink tracker.
 EyeLink.start_tracking();
-string edfname_final = logfile.subject() + "NBv_nv_1"; #names the EDF file, choose here the name of your individual edf file
-string edfname_out = "NBv_nv_1";
+string edfname_final = logfile.subject() + "2b_1"; #names the EDF file, choose here the name of your individual edf file
+string edfname_out = "2b_1";
 
 #here we are checking if the edf file already exists and if so it add a +1 to the ending
 int cntr = 1;
@@ -18,8 +18,8 @@ until
 begin
 	if file_exists(logfile_directory + edfname_final + ".edf") then
 		cntr = cntr + 1;
-		edfname_final = logfile.subject() + "NBv_nv_1" + string(cntr); # + ".edf";
-		edfname_out = "NBv_nv_1" + string(cntr) 
+		edfname_final = logfile.subject() + "2b_" + string(cntr); # + ".edf";
+		edfname_out = "2b_" + string(cntr) 
 	else
 		good_edfname = true
 	end;
@@ -140,7 +140,10 @@ begin
 	end;
 	i=i+1;
 end;
-
+##ET##
+	EyeLink.set_recording(true);
+	wait_interval(100); #in ms
+##ET##
 int i=5;
 loop	 
 until
@@ -149,7 +152,6 @@ begin
 	### ET ###
 	EyeLink.send_command("record_status_message 'V 0-back " + string(i) + "/100 start'");	
 	EyeLink.send_string( "TRIALID " + string(i));
-	### ET ###
 	if t_or_nt[i] == 1 then #non-target
 		nontarget.clear(); #clearing picture
 		nontarget.add_part(my_locations[i], 0 , 0); #adding correct stimuli picture
@@ -170,6 +172,5 @@ begin
 	EyeLink.send_command("record_status_message 'EndTrial'");
 	EyeLink.send_message("TRIAL_RESULT 0");
 end;
-end_trial.present();
 end_trial.present();
 cleanup();

@@ -287,6 +287,48 @@
 <name>HID-compliant mouse</name>
 </device>
 <device>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Wheel</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<device_type>2</device_type>
+<dx_device_type>0</dx_device_type>
+<max_raw_pos>65535</max_raw_pos>
+<min_raw_pos>0</min_raw_pos>
+<name>HID-compliant mouse 1</name>
+</device>
+<device>
 <axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -459,20 +501,15 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Space</ibn>
+<ibn>Ctrl</ibn>
+<ibn>Right Ctrl</ibn>
 <idn>Keyboard</idn>
 <index>0</index>
-<label></label>
-<offset>57</offset>
-</idv>
-<idv>
-<device_type>2</device_type>
-<dx_device_type>18</dx_device_type>
-<ibn>Button 0</ibn>
-<idn>Mouse</idn>
 <index>1</index>
 <label></label>
-<offset>12</offset>
+<label></label>
+<offset>29</offset>
+<offset>157</offset>
 </idv>
 <overrides></overrides>
 <sfn>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Presenation Files\0 back Visual - verbal - triggertest.sce</sfn>

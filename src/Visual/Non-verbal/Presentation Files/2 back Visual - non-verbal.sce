@@ -58,8 +58,8 @@ trial{ # the first stim is too quick if there is no delay. This trial puts 2sec 
 }wait_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 250;        	
-	stimulus_event {
+  trial_duration = 490;  #slightly less then 1 refesh rate the time for creation of the next stim       	
+	stimulus_event {      #this makes sure it is 500ms and not 512ms
 		picture {
 			} target;
 		target_button = 1;  
@@ -72,8 +72,8 @@ trial{ #this is the target trial
 }t_trial;
 
 trial{ #this is the non-target trial 
-  trial_duration = 250;        	
-	stimulus_event {
+  trial_duration = 490;  #slightly less then 1 refesh rate the time for creation of the next stim       	
+	stimulus_event {      #this makes sure it is 500ms and not 512ms
 		picture {
 			} nontarget; 
 		target_button = 2; 
@@ -86,8 +86,8 @@ trial{ #this is the non-target trial
 }nt_trial;
 
 trial{ #this is the isi trial 
-  trial_duration = 250;        	
-	stimulus_event {
+  trial_duration = 490;  #slightly less then 1 refesh rate the time for creation of the next stim       	
+	stimulus_event {      #this makes sure it is 500ms and not 512ms
 		picture {bitmap pic_cross;
 		x=0; y=0;
 			}fix_cross ; 
@@ -97,7 +97,9 @@ trial{ #this is the isi trial
 trial {
 trial_duration = 2000;
 	stimulus_event {
-		nothing{};
+		picture {
+		text {font_size=25; caption ="Block finished, saving eye tracking data, please wait a moment";};
+      x=0;y=0;};
 		code = "end";  
 		port_code = 200;  
 		time = 0;

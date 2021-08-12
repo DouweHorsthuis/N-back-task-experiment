@@ -31,7 +31,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL when you see the letter X \n \n Press right CTRL for any other letter \n \n \n \n Press left CTRL to continue";};
+		text {font_size=25; font="Arial"; caption ="Press left CTRL when the letter is at the same place as 2 before \n \n Press right CTRL when the letter is not at the same place as 2 before \n \n \n \n Press left CTRL to continue";};
       x=0;y=0;};
 }instruction_trial;
 
@@ -51,7 +51,7 @@ trial{ # the first stim is too quick if there is no delay. This trial puts 2sec 
 }wait_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 500;        	
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms          	
 	stimulus_event {
 		picture {	
 			text {	
@@ -68,7 +68,7 @@ trial{ #this is the target trial
 }t_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 500;        	
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms           	
 	stimulus_event {
 		picture {	
 			text {	
@@ -85,14 +85,14 @@ trial{ #this is the target trial
 }nt_trial;
 
 trial { 
-    trial_duration = 500; 
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms   
      picture t_nt_pic;  
     code = "target";
     target_button = 1; #so that a hit shows up if you press left button
 } isi_t;
 
 trial { 
-    trial_duration = 500;  
+  trial_duration = 485;  #slightly more than 1 refesh rate helps creation of next stimuli + when measuring the duration is stabel at 500ms     
      picture t_nt_pic;  
     code = "non-target";
     target_button = 2; #so that a hit shows up if you press right button
@@ -101,7 +101,9 @@ trial {
 trial {
 trial_duration = 2000;
 	stimulus_event {
-		nothing{};
+		picture {
+		text {font_size=25; caption ="Block finished, saving eye tracking data, please wait a moment";};
+      x=0;y=0;};
 		code = "end";  
 		port_code = 200;  
 		time = 0;

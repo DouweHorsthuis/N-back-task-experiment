@@ -3,8 +3,8 @@ int ntrls = 30; # number of trials (needs to be devidable by 5)
 string direc = scenario_directory;
 array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
 input_file order_in = new input_file;# Read-in the trial order
-#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
-string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()		
 loop
