@@ -131,7 +131,7 @@
 <idt>1000</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles</lfd>
+<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles\12666</lfd>
 <lnb>0</lnb>
 <lno>3</lno>
 <log>
@@ -256,6 +256,11 @@
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
 <name>HID Keyboard Device</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device 1</name>
 </device>
 <device>
 <abs_axis>

@@ -78,7 +78,6 @@ trial{ #this is the non-target trial
 			}nt_txt;
 			x = 0; y = 0;
 		}nt_pic; 
-		#target_button = 2; 
 	}nt_event;
 		stimulus_event {
 	nothing{};

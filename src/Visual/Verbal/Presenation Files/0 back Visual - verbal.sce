@@ -101,7 +101,9 @@ trial {
 trial {
 trial_duration = 2000;
 	stimulus_event {
-		nothing{};
+		picture {
+		text {font_size=25; caption ="Block finished, saving eye tracking data, please wait a moment";};
+      x=0;y=0;};
 		code = "end";  
 		port_code = 200;  
 		time = 0;

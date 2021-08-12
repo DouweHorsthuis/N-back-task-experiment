@@ -6,7 +6,7 @@
 % -> non-target comprise 80% of the sequence and target 20%
 % -> the sequence is pseudorandom otherwise.
 ntrls= 100;
-nblcks= 50;
+nblcks= 100;
 for b = 1:nblcks
     
     sequence = [];
@@ -15,8 +15,8 @@ for b = 1:nblcks
     
     for j = 1:ntrls/mini_seq_len
         
-        standard_vec = ones(1,mini_seq_len*0.85);
-        deviant_vec = 2.*ones(1,mini_seq_len*0.15);
+        standard_vec = ones(1,mini_seq_len*0.80);
+        deviant_vec = 2.*ones(1,mini_seq_len*0.20);
         seq = [standard_vec deviant_vec];
         
         valid_seq = 0;
@@ -60,7 +60,7 @@ for b = 1:nblcks
     % Print the sequence into a text file
     
     fname = sprintf('n-back_sequence_%d.txt',b);
-    fid = fopen(['D:\paradigms\N-back-task-experiment\' fname],'w');
+    fid = fopen(['E:\N-back\visual\non-verbal\' fname],'w');
     for n = 1:length(sequence)
         fprintf(fid,'%d\n',sequence(n));
     end

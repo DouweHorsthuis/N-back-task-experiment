@@ -31,7 +31,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL when you see the letter X \n \n Press right CTRL for any other letter \n \n \n \n Press left CTRL to continue";};
+		text {font_size=25; font="Arial"; caption ="Press left CTRL when the letter is at the same place as 2 before \n \n Press right CTRL when the letter is not at the same place as 2 before \n \n \n \n Press left CTRL to continue";};
       x=0;y=0;};
 }instruction_trial;
 
@@ -101,7 +101,9 @@ trial {
 trial {
 trial_duration = 2000;
 	stimulus_event {
-		nothing{};
+		picture {
+		text {font_size=25; caption ="Block finished, saving eye tracking data, please wait a moment";};
+      x=0;y=0;};
 		code = "end";  
 		port_code = 200;  
 		time = 0;
