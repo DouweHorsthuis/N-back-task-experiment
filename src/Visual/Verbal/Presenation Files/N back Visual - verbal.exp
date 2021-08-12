@@ -131,7 +131,7 @@
 <idt>1000</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles</lfd>
+<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles\12666</lfd>
 <lnb>0</lnb>
 <lno>3</lno>
 <log>
@@ -258,6 +258,11 @@
 <name>HID Keyboard Device</name>
 </device>
 <device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device 1</name>
+</device>
+<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -298,6 +303,48 @@
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
 <name>HID-compliant mouse</name>
+</device>
+<device>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Wheel</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<device_type>2</device_type>
+<dx_device_type>0</dx_device_type>
+<max_raw_pos>65535</max_raw_pos>
+<min_raw_pos>0</min_raw_pos>
+<name>HID-compliant mouse 1</name>
 </device>
 <device>
 <axis>
@@ -593,7 +640,7 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
-<ulo>0ms delay between stimulus and trigger and stabel, tested on 8/6/2021 in Adult Booth Right</ulo>
+<ulo>0ms delay between stimulus and trigger and stabel, both stimulus and ISI last 500ms  tested on 8/6/2021 in Adult Booth Right</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>

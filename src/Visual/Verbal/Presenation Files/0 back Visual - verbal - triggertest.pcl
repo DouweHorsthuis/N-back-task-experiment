@@ -136,8 +136,8 @@ until
 i > ntrls
 begin
 	if t_or_nt[i]== 1 then #non-target
-		port_code_letters[i]=11; #0-back
-		#port_code_letters[i]=21; #1-back
+		#port_code_letters[i]=11; #0-back
+		port_code_letters[i]=21; #1-back
 		#port_code_letters[i]=31; #2-back
 		letter = random(1,25);
 		if letter_array[letter]==my_letters[i-1] || letter_array[letter]==my_letters[i-2] || letter_array[letter]==my_letters[i-3] || letter_array[letter]==my_letters[i-4] then #check that it's the same as the used consonants
@@ -150,16 +150,19 @@ begin
 		end;
 		my_letters[i]=letter_array[letter];
 	elseif t_or_nt[i]== 2 then #target
-		port_code_letters[i]=12;#0-back 
-		my_letters[i] = letter_array[26]; #0-back (has to be X)
-		#port_code_letters[i]=22;#1-back 
-		#my_letters[i] = my_letters[i-1];#1-back
+		#port_code_letters[i]=12;#0-back 
+		#my_letters[i] = letter_array[26]; #0-back (has to be X)
+		port_code_letters[i]=22;#1-back 
+		my_letters[i] = my_letters[i-1];#1-back
 		#port_code_letters[i]=32;#2-back 
 		#my_letters[i] = my_letters[i-2];#2-back
 	end;
 	i=i+1;
 end;
-
+##ET##
+	EyeLink.set_recording(true);
+	wait_interval(100); #in ms
+##ET##
 int i=5;
 loop	 
 until

@@ -10,7 +10,7 @@ active_buttons = 2;
 button_codes = 1,2;
 write_codes = true; 
 pulse_width = 10;
-pcl_file = "2 back Visual - verbal.pcl";
+pcl_file = "2 back Visual - verbal - Practice.pcl";
 begin;
 
 bitmap { filename = "2-back.png"; preload = true; } instructions_bit;
@@ -25,8 +25,6 @@ trial{ #this is the first screen to prepare people
    picture {
 		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
       x=0;y=0;};
-	code = "201 start recording";  
-	port_code = 201; 
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
@@ -37,7 +35,7 @@ trial{ #this is the first screen to prepare people
 }instruction_trial;
 
 trial{ #this is the target trial 
-  trial_duration = 1000;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	
@@ -50,7 +48,7 @@ trial{ #this is the target trial
 }t_trial;
 
 trial{ #this is the non-target trial 
-  trial_duration = 1000;        	
+  trial_duration = 500;        	
 	stimulus_event {
 		picture {	
 			text {	

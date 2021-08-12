@@ -10,7 +10,7 @@ active_buttons = 2;
 button_codes = 1,2;
 write_codes = true; 
 pulse_width = 10;
-pcl_file = "0 back Visual - verbal.pcl";
+pcl_file = "0 back Visual - verbal - Practice.pcl";
 begin;
 bitmap { filename = "0-back.png"; preload = true; } instructions_bit;
 text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
@@ -23,9 +23,7 @@ trial{ #this is the first screen to prepare people
    terminator_button = 1,2;   # left-mouse button
    picture {
 		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
-      x=0;y=0;};
-	code = "201 start recording";  
-	port_code = 201; 
+      x=0;y=0;}; 
 }start_trial;
 
 trial{ #this is the first screen to prepare people 
