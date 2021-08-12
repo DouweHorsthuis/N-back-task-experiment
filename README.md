@@ -110,16 +110,16 @@ Explain trigger codes
 
 ### Timing  
 #### Auditory N-back
-Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 1ms delay between the onset of any stimulus and the trigger**. 
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 1ms delay between the onset of any stimulus and the trigger**. The trial consists of the sound of a letter for a total of 1000ms. Due to the nature of spoken stimuli the duration of the leters themselves are different. But each trial takes 1000ms in total.
 
 #### Visual Non-Verbal
-Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus).  
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 7ms (this is the time the video card need to produce the visual stimulus). Each trial starts with the presentation of the stimulus for 500ms followed by an ISI trial of 500ms. The ISI trial is a picture of only the fixation cross. Because of refresh rates speeds the trials have different times in the code. This is because they are corrected for Adult booth Right.     
 
 ![timing](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/visual_non_verbal_timing.JPG)  
 It is clear that the onset of the trigger (orange) always is at the same time as where the visual stimulus (blue) changes from the norm.  
 
 #### Visual Verbal
-Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 2ms (this is the time the video card need to produce the letters, this is a little unusual because all visual stimuli normally have a 7ms delay. This difference (5ms) is likely caused by not using a picture but presentation making the letters).
+Having measured the time between the stimuli and the trigger with an oscilosscope **we see a 0ms delay between the onset of any stimulus and the trigger**. This is because we delay the trigger by 2ms (this is the time the video card need to produce the letters, this is a little unusual because all visual stimuli normally have a 7ms delay. This difference (5ms) is likely caused by not using a picture but presentation making the letters). Each trial starts with the presentation of the stimulus for 500ms followed by an ISI trial of 500ms. The ISI trial only has target and not target written in the bottom of the screen. Because of refresh rates speeds the trials have different times in the code. This is because they are corrected for Adult booth Right.     
 
 ![timing](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/visual_verbal_timing.JPG)  
 It is clear that the onset of the trigger (orange) always is at the same time as where the visual stimulus (blue) changes from the norm.
