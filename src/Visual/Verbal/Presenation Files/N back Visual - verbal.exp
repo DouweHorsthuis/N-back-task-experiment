@@ -258,6 +258,11 @@
 <name>HID Keyboard Device</name>
 </device>
 <device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device 1</name>
+</device>
+<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>

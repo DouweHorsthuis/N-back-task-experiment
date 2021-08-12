@@ -1,0 +1,118 @@
+
+
+int ntrls = 100; # number of trials (needs to be devidable by 5) 
+string direc = scenario_directory;
+
+array <int> t_or_nt[ntrls];# array to be filled from pre-made sequence text files
+input_file order_in = new input_file;# Read-in the trial order
+string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
+order_in.open(file_path);
+order_in.set_delimiter( '\n' ); # for get_line()		
+loop
+int i = 1; 
+until
+i > ntrls
+begin
+	t_or_nt[i] = order_in.get_int();
+	i = i+1;
+end;
+
+order_in.close();
+
+
+array <string> letter_array[26];
+letter_array[1]  = "A";
+letter_array[2]  = "B";
+letter_array[3]  = "C";
+letter_array[4]  = "D";
+letter_array[5]  = "E";
+letter_array[6]  = "F";
+letter_array[7]  = "G";
+letter_array[8]  = "H";
+letter_array[9]  = "I";
+letter_array[10] = "J";
+letter_array[11] = "K";
+letter_array[12] = "L";
+letter_array[13] = "M";
+letter_array[14] = "N";
+letter_array[15] = "O";
+letter_array[16] = "P";
+letter_array[17] = "Q";
+letter_array[18] = "R";
+letter_array[19] = "S";
+letter_array[20] = "T";
+letter_array[21] = "U";
+letter_array[22] = "V";
+letter_array[23] = "W";
+letter_array[24] = "Z";#switched these because of 0-back task
+letter_array[25] = "Y";
+letter_array[26] = "X";#switched these because of 0-back task
+
+array <string> my_letters[ntrls]; #will contain all the letters
+array <int> port_code_letters[ntrls]; #used for adding the correct port code to the letter
+
+
+loop #so that the bdf starts saving data
+int start = 1;
+until
+start>2
+begin
+	start_trial.present();
+	start = start +1;
+end;
+
+loop #this loop will assign all the info to each trial
+int i = 5; int letter; 
+until 
+i > ntrls
+begin
+	if t_or_nt[i]== 1 then #non-target
+		port_code_letters[i]=11; #0-back
+		#port_code_letters[i]=21; #1-back
+		#port_code_letters[i]=31; #2-back
+		letter = random(1,25);
+		if letter_array[letter]==my_letters[i-1] || letter_array[letter]==my_letters[i-2] || letter_array[letter]==my_letters[i-3] || letter_array[letter]==my_letters[i-4] then #check that it's the same as the used consonants
+			loop #if it's the same
+			letter = random(1,25);#choose new letter until
+			until letter_array[letter]!=my_letters[i-1] && letter_array[letter]!=my_letters[i-2] && letter_array[letter]!=my_letters[i-3] && letter_array[letter]!=my_letters[i-4] #letter is not the same as previous letters
+			begin
+				letter = random(1,25);
+			end;
+		end;
+		my_letters[i]=letter_array[letter];
+	elseif t_or_nt[i]== 2 then #target
+		port_code_letters[i]=12;#0-back 
+		my_letters[i] = letter_array[26]; #0-back (has to be X)
+		#port_code_letters[i]=22;#1-back 
+		#my_letters[i] = my_letters[i-1];#1-back
+		#port_code_letters[i]=32;#2-back 
+		#my_letters[i] = my_letters[i-2];#2-back
+	end;
+	i=i+1;
+end;
+
+int i=5;
+loop	 
+until
+	i > ntrls 
+begin	
+	if t_or_nt[i] == 1 then #non-target
+		nt_pic.clear(); 
+		nt_txt.set_caption(my_letters[i]);
+		nt_txt.redraw();
+		nt_pic.add_part(nt_txt,0,0);
+		nt_event.set_port_code(port_code_letters[i]);
+		nt_event.set_event_code(string(port_code_letters[i]));
+		nt_trial.present();
+   elseif t_or_nt[i] == 2 then #target
+		t_pic.clear(); 
+		t_txt.set_caption(my_letters[i]);
+		t_txt.redraw();
+		t_pic.add_part(t_txt,0,0);
+		t_event.set_port_code(port_code_letters[i]);
+		t_event.set_event_code(string(port_code_letters[i]));
+		t_trial.present();
+	end;
+	i=i+1;
+end;
