@@ -12,7 +12,7 @@
 
 <h3 align="center">N-Back Task</h3>
 
-<h4 align="center">N-Back task experiment for Presentation® NeuroBehavioral Systems, This tasks are being created for the Cystinosis experiment battery (2021). There will be 2 Visual versions (1 verbal and 1 non-verbal) and 1 auditory version.   
+<h4 align="center">N-Back task experiment for Presentation® NeuroBehavioral Systems, This tasks are created for the Cystinosis experiment battery (2021). There are 2 Visual versions (1 verbal and 1 non-verbal) and 1 auditory version.   
 </h4>
 
 
@@ -42,29 +42,21 @@ This Project has 3 different N-back tasks each designed to touch a different asp
 3. Auditory 
     - For this experiment, participant will hear letter being said out loud and have to do the N back task based on this.
 
-# Maybe add here some extra info about general N-back tasks
-
 ## Getting Started
 
-There is only 1 sequence file if you download this repo. Use the matlab script to create more and change the presentation code (line 8 and 9 in each of the PCL files)
+There is only 1 sequence file if you download this repo. Use the matlab script to create more and change the presentation code (line 8 and 9 in each of the PCL files). This is done so there are not an extra 150 files per paradigm. When using the paradigm you need these 100 sequences to make sure that everyone's paradigm is not following the same sequence.
 ``` 
-#string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+#string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
 string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 ```
 *Need to be*
 ``` 
-string file_path = direc + "sequences//" + printf(random(1,50),"n-back_sequence_%d.txt");
+string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
 #string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 ```
 Like this it will choose randomly between the 50 sequence files. These files are all semi random with the rule that there are always at least 2 no-target trails between targets. It also makes sure that 80% of the trials are non-target trials
 
-## this needs to be upgraded to at least 3 non-targets, it gets more diffecult for the 2-back tasks
-
-
 ### Presentation settings
-
-Add here all the presentation settings. We haven't tested it so no info as of yet. There should be print screens of the settings 
-
 
 ## Info about the paradigm  
 
@@ -103,10 +95,20 @@ In the Presentation Files folder you'll find the experiment and the sequences th
       - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
       - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same. 
       
-## update these in the experiment files to match
 
 ### Trigger codes
-Explain trigger codes
+```
+port_code=11; #0-back Non-Target
+port_code=21; #1-back Non-Target
+port_code=31; #2-back Non-Target
+port_code=12; #0-back Target
+port_code=22; #1-back Target
+port_code=32; #2-back Target
+port_code=1;  # Left - ctrl (After perceiving target)
+port_code=2;  # Right- ctrl (After perceiving Non-target)
+port_code=201;# to auto-start saving (biosemi)
+port_code=200;# to auto-pause saving (biosemi)
+```
 
 ### Timing  
 #### Auditory N-back
