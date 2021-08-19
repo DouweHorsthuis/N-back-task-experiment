@@ -44,7 +44,7 @@ This Project has 3 different N-back tasks each designed to touch a different asp
 
 ## Getting Started
 
-There is only 1 sequence file if you download this repo. Use the matlab script to create more and change the presentation code (line 8 and 9 in each of the PCL files). This is done so there are not an extra 150 files per paradigm. When using the paradigm you need these 100 sequences to make sure that everyone's paradigm is not following the same sequence.
+There is only 1 sequence file if you download this repo. Use the matlab script to create more and change the presentation code (line 8 and 9 in each of the PCL files). This is done so there are not an extra 100 files per paradigm. When using the paradigm you need these 100 sequences to make sure that everyone's paradigm is not following the same sequence.
 ``` 
 #string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
 string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
@@ -54,7 +54,7 @@ string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 string file_path = direc + "sequences//" + printf(random(1,100),"n-back_sequence_%d.txt");
 #string file_path = direc + "sequences//" + printf(1,"n-back_sequence_%d.txt");
 ```
-Like this it will choose randomly between the 50 sequence files. These files are all semi random with the rule that there are always at least 2 no-target trails between targets. It also makes sure that 80% of the trials are non-target trials
+Like this it will choose randomly between the 100 sequence files. These files are all semi random with the rule that there are always at least 2 no-target trails between targets. It also makes sure that 80% of the trials are non-target trials
 
 ### Presentation settings
 
