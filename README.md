@@ -22,6 +22,7 @@
 2. [Getting started](#getting-started)
     - [Presentation settings](#presentation-settings)
 3. [Info about the paradigm](#info-about-the-paradigm)
+3. [Piloting Results (EEG)](#piloting-results-eeg)
 3. [Contact](#contact)    
 3. [Acknowledgement](#acknowledgement)
 
@@ -125,6 +126,19 @@ Having measured the time between the stimuli and the trigger with an oscilosscop
 
 ![timing](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/visual_verbal_timing.JPG)  
 It is clear that the onset of the trigger (orange) always is at the same time as where the visual stimulus (blue) changes from the norm.
+
+## Piloting Results (EEG)
+We have collected data from 4 control participants and averaged their data. The data shown here is of the CPz channel and is shows the different difficulties plotted separtatly. It is clear that the data indeed shows a difference in the time window we expected (P3) and changes depending based on difficulty.  
+  
+**Auditory verbal**  
+![Auditory verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_aud.pgn)  
+  
+**Visual verbal**  
+![Visual verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_vis.pgn)  
+  
+**Visual non-verbal**
+![Visual non-verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_non_verb_vis.pgn) 
+
 
 ## Contact
 
