@@ -131,13 +131,13 @@ It is clear that the onset of the trigger (orange) always is at the same time as
 We have collected data from 4 control participants and averaged their data. The data shown here is of the CPz channel and is shows the different difficulties plotted separtatly. It is clear that the data indeed shows a difference in the time window we expected (P3) and changes depending based on difficulty.  
   
 **Auditory verbal**  
-![Auditory verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_aud.pgn)  
+![Auditory verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_aud.png)  
   
 **Visual verbal**  
-![Visual verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_vis.pgn)  
+![Visual verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_verb_vis.png)  
   
 **Visual non-verbal**
-![Visual non-verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_non_verb_vis.pgn) 
+![Visual non-verbal](https://github.com/DouweHorsthuis/N-back-task-experiment/blob/main/images/n-back_non_verb_vis.png) 
 
 
 ## Contact
