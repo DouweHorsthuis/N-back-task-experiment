@@ -1,0 +1,12 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Douwe John"
+  given-names: "Horsthuis"
+- family-names: "Ana Alves"
+  given-names: "Francisco"
+title: "N-back-task-experiment"
+version: 1.0.0
+doi: 10.5281/zenodo.5605047
+date-released: 2021-10-27
+url: "https://github.com/DouweHorsthuis/N-back-task-experiment"
