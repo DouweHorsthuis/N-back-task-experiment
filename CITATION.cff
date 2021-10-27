@@ -6,7 +6,7 @@ authors:
 - family-names: "Ana Alves"
   given-names: "Francisco"
 title: "N-back-task-experiment"
-version: 1.0.0
+version: 1.01
 doi: 10.5281/zenodo.5605047
 date-released: 2021-10-27
 url: "https://github.com/DouweHorsthuis/N-back-task-experiment"
