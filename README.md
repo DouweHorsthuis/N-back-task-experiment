@@ -88,15 +88,15 @@ For any of the instructions to make sense, put a blue sticker on the left Ctrl a
   
 2. Visual-non-verbal
     - For this experiment, participant will see a square and have to do the N-back task based on the location
-      - 0-back = press left CTRL if the square is in the top right corner, press right CTRL for any other location  
-      - 1-back = press left CTRL if the previous square was in the same place current one, press right CTRL when it was not the same  
-      - 2-back = press left CTRL if the location of the square, 2 trials ago, is the same as the current one, press right CTRL when it is not the same.  
+      - 0-back = Press the BLUE key when you see the square in the left top corner. Press the YELLOW key when you see the square anywhere else
+      - 1-back = Press the BLUE key when you see the square in the same place twice in a row. Press the YELLOW key when you see the square anywhere else
+      - 2-back = Press the BLUE key if the you see the square in the same place where it appeared two times ago. Press the YELLOW key when you see the square anywhere else
       
 3. Auditory 
     - For this experiment, participant will hear letter being said out loud
-      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
-      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
-      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same. 
+      - 0-back = Press the BLUE key when you hear the letter X. Press the YELLOW key when you hear any other letter
+      - 1-back = Press the BLUE key when you hear the same letter twice in a row. Press the YELLOW key when you hear any other letter
+      - 2-back = Press the BLUE key if the letter you hear was said two times ago. Press the YELLOW key when you hear any other letter
       
 
 ### Trigger codes
