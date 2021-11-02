@@ -22,13 +22,13 @@ bitmap { filename = "6.png"; preload = true; } pic_6;
 bitmap { filename = "7.png"; preload = true; } pic_7;
 bitmap { filename = "8.png"; preload = true; } pic_8;
 bitmap { filename = "9.png"; preload = true; } pic_9;
+picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
 bitmap {filename = "0-back-Slide1.png";  preload = true;} slide1; picture{ bitmap slide1; x = 0; y = 0; }inst_1;
 bitmap {filename = "0-back-Slide2.png";  preload = true;} slide2; picture{ bitmap slide2; x = 0; y = 0; }inst_2;
 bitmap {filename = "0-back-Slide3.png";  preload = true;} slide3; picture{ bitmap slide3; x = 0; y = 0; }inst_3;
 bitmap {filename = "0-back-Slide4.png";  preload = true;} slide4; picture{ bitmap slide4; x = 0; y = 0; }inst_4;
 bitmap {filename = "0-back-Slide5.png";  preload = true;} slide5; picture{ bitmap slide5; x = 0; y = 0; }inst_5;
 bitmap {filename = "0-back-Slide6.png";  preload = true;} slide6; picture{ bitmap slide6; x = 0; y = 0; }inst_6;
-bitmap {filename = "0-back-Slide7.png";  preload = true;} slide7; picture{ bitmap slide7; x = 0; y = 0; }inst_7;
 
 
 trial{ 
@@ -73,20 +73,13 @@ trial{
 	picture inst_6;
 }instructions_6_trial;
 
-trial{ 
-   trial_duration = forever;        	# trial lasts until target
-   trial_type = specific_response;  # button is pressed
-   terminator_button = 1,2;   # Ctrl  
-	picture inst_7;
-}instructions_7_trial;
-
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # any-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START"; font_color = 200,200,200;};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS THE YELLOW OR BLUE BUTTON TO START"; font_color = 200,200,200;};
       x=0;y=0;};
 }start_trial;
 
