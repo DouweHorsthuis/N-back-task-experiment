@@ -39,16 +39,54 @@ sound { wavefile { filename = "w.wav"; preload = true; }; } w;
 sound { wavefile { filename = "x.wav"; preload = true; }; } x;
 sound { wavefile { filename = "y.wav"; preload = true; }; } y;
 sound { wavefile { filename = "z.wav"; preload = true; }; } z;
-bitmap { filename = "0-back.png"; preload = true; } instructions_bit;
-picture { bitmap instructions_bit;x=0; y=0;} instructions_pic;
+bitmap {filename = "0-back-Slide1.png";  preload = true;} slide1; picture{ bitmap slide1; x = 0; y = 0; }inst_1;
+bitmap {filename = "0-back-Slide2.png";  preload = true;} slide2; picture{ bitmap slide2; x = 0; y = 0; }inst_2;
+bitmap {filename = "0-back-Slide3.png";  preload = true;} slide3; picture{ bitmap slide3; x = 0; y = 0; }inst_3;
+bitmap {filename = "0-back-Slide4.png";  preload = true;} slide4; picture{ bitmap slide4; x = 0; y = 0; }inst_4;
+bitmap {filename = "0-back-Slide5.png";  preload = true;} slide5; picture{ bitmap slide5; x = 0; y = 0; }inst_5;
+bitmap {filename = "0-back-Slide6.png";  preload = true;} slide6; picture{ bitmap slide6; x = 0; y = 0; }inst_6;
 
-trial{ #this is the first screen to prepare people 
-  trial_duration = forever;        	# trial lasts until target
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
    trial_type = specific_response;  # button is pressed
-   terminator_button = 1,2;   # left-ctrl button
-	picture instructions_pic;
-}instruction_trial;
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_1;
+}instructions_1_trial;
 
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_2;
+}instructions_2_trial;
+
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_3;
+}instructions_3_trial;
+
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_4;
+}instructions_4_trial;
+
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_5;
+}instructions_5_trial;
+
+trial{ 
+   trial_duration = forever;        	# trial lasts until target
+   trial_type = specific_response;  # button is pressed
+   terminator_button = 1,2;   # Ctrl  
+	picture inst_6;
+}instructions_6_trial;
 
 trial{ #this is the first screen to prepare people 
   trial_duration = forever;        	# trial lasts until target

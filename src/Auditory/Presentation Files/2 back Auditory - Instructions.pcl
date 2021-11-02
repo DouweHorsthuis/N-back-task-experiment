@@ -50,7 +50,14 @@ letter_sound[26] = x;
 array <sound> my_sounds[ntrls]; #will contain all the letters
 array <int> port_code_sounds[ntrls]; #used for adding the correct port code to the letter
 
-instruction_trial.present();
+	instructions_1_trial.present();
+	instructions_2_trial.present();
+	instructions_3_trial.present();
+	instructions_4_trial.present();
+	instructions_5_trial.present();
+	instructions_6_trial.present();
+	instructions_7_trial.present();
+	
 loop #so that the bdf starts saving data
 int start = 1;
 until
