@@ -22,7 +22,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # left-mouse button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS THE YELLOW OR BLUE BUTTON TO START"; };
       x=0;y=0;}; 
 }start_trial;
 
@@ -31,7 +31,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL when you see the letter X \n \n Press right CTRL for any other letter \n \n \n \n Press left CTRL to continue";};
+		text {font_size=25; font="Arial"; caption ="Press the BLUE key when you see the letter X \n \n Press the YELLOW key when you see any other letter  \n \n \n \n  Press the Blue key to continue";};
       x=0;y=0;};
 }instruction_trial;
 
