@@ -78,12 +78,14 @@ Logfiles with experiment reaction times and other information automatically shou
 In the Presentation Files folder you'll find the experiment and the sequences that are semi-randomized, so we are sure that there are no 2 target trials in a row and how many trials there are. These sequences are made so that there are always non-target trials before a target trial.  
 
 ### Instructions  
+
+For any of the instructions to make sense, put a blue sticker on the left Ctrl and a yellow sticker on the right control. These are the buttons people will respond with.
 1. Visual-verbal
     - For this experiment, participants will see a letter and have to do the N back task based on this.  
-      - 0-back = press left CTRL for the letter "X", press right CTRL for any other letter  
-      - 1-back = press left CTRL if the previous letter is the same as the current one, press right CTRL when it is not the same  
-      - 2-back = press left CTRL if the letter, 2 trials ago, is the same as the current one, press right CTRL when it is not the same  
-
+      - 0-back = Press the BLUE key when you hear the letter X. Press the YELLOW key when you hear any other letter
+      - 1-back = Press the BLUE key when you hear the same letter twice in a row. Press the YELLOW key when you hear any other letter
+      - 2-back = Press the BLUE key if the letter you hear was said two times ago. Press the YELLOW key when you hear any other letter
+  
 2. Visual-non-verbal
     - For this experiment, participant will see a square and have to do the N-back task based on the location
       - 0-back = press left CTRL if the square is in the top right corner, press right CTRL for any other location  
