@@ -82,21 +82,21 @@ In the Presentation Files folder you'll find the experiment and the sequences th
 For any of the instructions to make sense, put a blue sticker on the left Ctrl and a yellow sticker on the right control. These are the buttons people will respond with.
 1. Visual-verbal
     - For this experiment, participants will see a letter and have to do the N back task based on this.  
-      - 0-back = Press the BLUE key when you hear the letter X. Press the YELLOW key when you hear any other letter
-      - 1-back = Press the BLUE key when you hear the same letter twice in a row. Press the YELLOW key when you hear any other letter
-      - 2-back = Press the BLUE key if the letter you hear was said two times ago. Press the YELLOW key when you hear any other letter
+      - 0-back = Press the BLUE key when you see the letter X. Press the YELLOW key when you hear any other letter.
+      - 1-back = Press the BLUE key when you see the same letter twice in a row. Press the YELLOW key when you hear any other letter.
+      - 2-back = Press the BLUE key if the letter you see appeared two times ago. Press the YELLOW key when you see any other letter.
   
 2. Visual-non-verbal
     - For this experiment, participant will see a square and have to do the N-back task based on the location
-      - 0-back = Press the BLUE key when you see the square in the left top corner. Press the YELLOW key when you see the square anywhere else
-      - 1-back = Press the BLUE key when you see the square in the same place twice in a row. Press the YELLOW key when you see the square anywhere else
-      - 2-back = Press the BLUE key if the you see the square in the same place where it appeared two times ago. Press the YELLOW key when you see the square anywhere else
+      - 0-back = Press the BLUE key when you see the square in the left top corner. Press the YELLOW key when you see the square anywhere else.
+      - 1-back = Press the BLUE key when you see the square in the same place twice in a row. Press the YELLOW key when you see the square anywhere else.
+      - 2-back = Press the BLUE key if the you see the square in the same place where it appeared two times ago. Press the YELLOW key when you see the square anywhere else.
       
 3. Auditory 
     - For this experiment, participant will hear letter being said out loud
-      - 0-back = Press the BLUE key when you hear the letter X. Press the YELLOW key when you hear any other letter
-      - 1-back = Press the BLUE key when you hear the same letter twice in a row. Press the YELLOW key when you hear any other letter
-      - 2-back = Press the BLUE key if the letter you hear was said two times ago. Press the YELLOW key when you hear any other letter
+      - 0-back = Press the BLUE key when you hear the letter X. Press the YELLOW key when you hear any other letter.
+      - 1-back = Press the BLUE key when you hear the same letter twice in a row. Press the YELLOW key when you hear any other letter.
+      - 2-back = Press the BLUE key if the letter you hear was said two times ago. Press the YELLOW key when you hear any other letter.
       
 
 ### Trigger codes
