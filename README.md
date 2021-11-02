@@ -82,8 +82,8 @@ In the Presentation Files folder you'll find the experiment and the sequences th
 For any of the instructions to make sense, put a blue sticker on the left Ctrl and a yellow sticker on the right control. These are the buttons people will respond with.
 1. Visual-verbal
     - For this experiment, participants will see a letter and have to do the N back task based on this.  
-      - 0-back = Press the BLUE key when you see the letter X. Press the YELLOW key when you hear any other letter.
-      - 1-back = Press the BLUE key when you see the same letter twice in a row. Press the YELLOW key when you hear any other letter.
+      - 0-back = Press the BLUE key when you see the letter X. Press the YELLOW key when you see any other letter.
+      - 1-back = Press the BLUE key when you see the same letter twice in a row. Press the YELLOW key when you see any other letter.
       - 2-back = Press the BLUE key if the letter you see appeared two times ago. Press the YELLOW key when you see any other letter.
   
 2. Visual-non-verbal

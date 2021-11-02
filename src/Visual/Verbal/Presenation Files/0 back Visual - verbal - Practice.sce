@@ -69,7 +69,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # left-mouse button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS THE YELLOW OR BLUE BUTTON TO START";};
       x=0;y=0;}; 
 }start_trial;
 

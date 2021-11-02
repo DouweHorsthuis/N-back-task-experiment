@@ -29,7 +29,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1,2;   # left-mouse button
    picture {
-		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS ANY Ctrl TO START";};
+		text {font_size=25; font="Arial"; caption ="PLEASE DOUBLE PRESS THE YELLOW OR BLUE BUTTON TO START"; };
       x=0;y=0;};
 }start_trial;
 
@@ -38,7 +38,7 @@ trial{ #this is the first screen to prepare people
    trial_type = specific_response;  # button is pressed
    terminator_button = 1;   # left-ctrl button
    picture {
-		text {font_size=25; font="Arial"; caption ="Press left CTRL when the square is at the same place as 2 before \n \n Press right CTRL when the square is not at the same place as 2 before \n \n \n \n Press left CTRL to continue";};
+		text {font_size=25; font="Arial"; caption ="Press the BLUE key if the you see the square in the same place where it appeared two times ago \n \n Press the YELLOW key when you see the square anywhere else \n \n \n \n Press the BLUE key to continue";};
       x=0;y=0;};
 }instruction_trial;
 
