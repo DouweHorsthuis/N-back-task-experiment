@@ -22,7 +22,6 @@ bitmap { filename = "6.png"; preload = true; } pic_6;
 bitmap { filename = "7.png"; preload = true; } pic_7;
 bitmap { filename = "8.png"; preload = true; } pic_8;
 bitmap { filename = "9.png"; preload = true; } pic_9;
-picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
 bitmap {filename = "0-back-Slide1.png";  preload = true;} slide1; picture{ bitmap slide1; x = 0; y = 0; }inst_1;
 bitmap {filename = "0-back-Slide2.png";  preload = true;} slide2; picture{ bitmap slide2; x = 0; y = 0; }inst_2;
 bitmap {filename = "0-back-Slide3.png";  preload = true;} slide3; picture{ bitmap slide3; x = 0; y = 0; }inst_3;
