@@ -39,7 +39,7 @@ array <int> port_code_location[ntrls]; #used for adding the correct port code to
 	instructions_4_trial.present();
 	instructions_5_trial.present();
 	instructions_6_trial.present();
-	instructions_7_trial.present();
+	#instructions_7_trial.present();
 
 loop #so that the bdf starts saving data
 int start = 1;

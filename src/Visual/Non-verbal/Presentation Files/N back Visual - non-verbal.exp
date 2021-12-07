@@ -635,7 +635,8 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
-<ulo>Stable 0ms between stim and trigger, both stimulus and ISI is presented always for 500ms each</ulo>
+<ulo>Stable 0ms between stim and trigger, both stimulus and ISI is presented always for 500ms each </ulo>
+<ulo>Collected in AR</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>
