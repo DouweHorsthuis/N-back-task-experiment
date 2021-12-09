@@ -161,9 +161,9 @@
 <il>0</il>
 <ivm>0</ivm>
 <mtype>dig</mtype>
-<piai>LPT3</piai>
+<piai>LPT1</piai>
 <pian>Parallel Port</pian>
-<pihpn>LPT3</pihpn>
+<pihpn>LPT1</pihpn>
 <pindex>1</pindex>
 <rs>1</rs>
 <rt>0</rt>
@@ -240,11 +240,6 @@
 <name>Keyboard</name>
 </device>
 <device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
-</device>
-<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -285,6 +280,11 @@
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
 <name>HID-compliant mouse</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device</name>
 </device>
 <device>
 <abs_axis>

@@ -13,7 +13,7 @@ pulse_width = 10;
 pcl_file = "0 back Visual - verbal.pcl";
 begin;
 
-text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
+text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                 "; } t_nt_text;
 picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
 bitmap { filename = "standard_et.jpg"; preload = true; } et_bit; # for the eyetracker
 

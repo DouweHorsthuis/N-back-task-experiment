@@ -174,9 +174,9 @@
 <il>0</il>
 <ivm>0</ivm>
 <mtype>dig</mtype>
-<piai>LPT3</piai>
+<piai>LPT1</piai>
 <pian>Parallel Port</pian>
-<pihpn>LPT3</pihpn>
+<pihpn>LPT1</pihpn>
 <pindex>1</pindex>
 <rs>1</rs>
 <rt>0</rt>
@@ -545,7 +545,7 @@
 <sde>
 <buffer_length>1000</buffer_length>
 <custom_buf>primary</custom_buf>
-<default>0</default>
+<default>1</default>
 <dup_channels>0</dup_channels>
 <ex_period>0</ex_period>
 <halt_on_underrun>1</halt_on_underrun>
@@ -557,7 +557,7 @@
 <side_speakers>1</side_speakers>
 <use_rewind_distance>0</use_rewind_distance>
 </sde>
-<sdv>Speakers (2- Sound Blaster Audigy 5/Rx)</sdv>
+<sdv>Primary Sound Driver</sdv>
 <show_dis>1</show_dis>
 <show_parm>1</show_parm>
 <show_term>1</show_term>

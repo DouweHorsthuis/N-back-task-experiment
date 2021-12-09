@@ -107,7 +107,7 @@ trial{ # the first stim is too quick if there is no delay. This trial puts 2sec 
 	stimulus_event {
 	nothing{};
 	deltat=500;
-		code = "201 start recording";  
+		#code = "201 start recording";  
 	port_code = 201; 
 	}code_event;
 }wait_trial;

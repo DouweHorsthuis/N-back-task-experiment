@@ -131,7 +131,7 @@
 <idt>1000</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles\12666</lfd>
+<lfd>C:\Users\Presentation\Desktop\Active Projects\N-back\Visual\Verbal\Logfiles\</lfd>
 <lnb>0</lnb>
 <lno>3</lno>
 <log>
@@ -174,9 +174,9 @@
 <il>0</il>
 <ivm>0</ivm>
 <mtype>dig</mtype>
-<piai>LPT3</piai>
+<piai>LPT1</piai>
 <pian>Parallel Port</pian>
-<pihpn>LPT3</pihpn>
+<pihpn>LPT1</pihpn>
 <pindex>1</pindex>
 <rs>1</rs>
 <rt>0</rt>
@@ -253,16 +253,6 @@
 <name>Keyboard</name>
 </device>
 <device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
-</device>
-<device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device 1</name>
-</device>
-<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -303,6 +293,11 @@
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
 <name>HID-compliant mouse</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device</name>
 </device>
 <device>
 <abs_axis>
@@ -640,7 +635,7 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
-<ulo>0ms delay between stimulus and trigger and stabel, both stimulus and ISI last 500ms  tested on 8/6/2021 in Adult Booth Right</ulo>
+<ulo>0ms delay between stimulus and trigger and stabel, both stimulus and ISI last 500ms  tested on 11/22/2021 in Kids booth Left - collected in KL</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>

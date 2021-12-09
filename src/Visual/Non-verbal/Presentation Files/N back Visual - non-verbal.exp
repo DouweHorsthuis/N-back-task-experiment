@@ -174,9 +174,9 @@
 <il>0</il>
 <ivm>0</ivm>
 <mtype>dig</mtype>
-<piai>LPT3</piai>
+<piai>LPT1</piai>
 <pian>Parallel Port</pian>
-<pihpn>LPT3</pihpn>
+<pihpn>LPT1</pihpn>
 <pindex>1</pindex>
 <rs>1</rs>
 <rt>0</rt>
@@ -298,48 +298,6 @@
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
 <name>HID-compliant mouse</name>
-</device>
-<device>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Wheel</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<device_type>2</device_type>
-<dx_device_type>0</dx_device_type>
-<max_raw_pos>65535</max_raw_pos>
-<min_raw_pos>0</min_raw_pos>
-<name>HID-compliant mouse 1</name>
 </device>
 <device>
 <axis>
@@ -636,7 +594,7 @@
 </trigger_mode>
 <udt>0</udt>
 <ulo>Stable 0ms between stim and trigger, both stimulus and ISI is presented always for 500ms each </ulo>
-<ulo>Collected in AR</ulo>
+<ulo>Collected in KL</ulo>
 <unc>0</unc>
 <upb>0</upb>
 <urp>0</urp>

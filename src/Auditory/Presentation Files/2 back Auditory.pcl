@@ -64,9 +64,9 @@ until
 ii > ntrls
 begin
 	if t_or_nt[ii]== 1 || ii< 10 then #non-target + not first 5 trials
-		port_code_sounds[ii]=11; #0-back
+		#port_code_sounds[ii]=11; #0-back
 		#port_code_sounds[ii]=21; #1-back
-		#port_code_sounds[ii]=31; #2-back
+		port_code_sounds[ii]=31; #2-back
 		letter = random(1,26); 
 		if letter_sound[letter]==my_sounds[ii-1] || letter_sound[letter]==my_sounds[ii-2] || letter_sound[letter]==my_sounds[ii-3] || letter_sound[letter]==my_sounds[ii-4] then
 			loop #if it's the same
@@ -108,3 +108,4 @@ begin
 	end;
 	ii=ii+1;
 end;
+end_trial.present();

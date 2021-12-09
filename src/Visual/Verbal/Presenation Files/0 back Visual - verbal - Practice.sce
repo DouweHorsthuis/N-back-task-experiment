@@ -12,7 +12,7 @@ write_codes = true;
 pulse_width = 10;
 pcl_file = "0 back Visual - verbal - Practice.pcl";
 begin;
-text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTarget                                                                 Non-Target"; } t_nt_text;
+text{caption = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                "; } t_nt_text;
 picture { text t_nt_text; x = 0; y = 0; } t_nt_pic;
 bitmap {filename = "0-back-Slide1.png";  preload = true;} slide1; picture{ bitmap slide1; x = 0; y = 0; }inst_1;
 bitmap {filename = "0-back-Slide2.png";  preload = true;} slide2; picture{ bitmap slide2; x = 0; y = 0; }inst_2;

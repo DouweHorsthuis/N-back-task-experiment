@@ -112,3 +112,4 @@ begin
 	end;
 	ii=ii+1;
 end;
+end_trial.present();
